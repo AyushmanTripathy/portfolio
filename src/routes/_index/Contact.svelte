@@ -1,3 +1,7 @@
+<script context="module">
+  export const prerender = true;
+</script>
+
 <main>
   <h1>Get in touch!</h1>
   <section>
@@ -11,7 +15,7 @@
       <img src="/hackerrank.svg" alt="hackerrank">
     </a>
   </section>
-  <form name="mails" action="POST" data-netlify="true">
+  <form name="mails" form-name="mails" action="POST" data-netlify="true">
     <input
       autocomplete="off"
       type="text"
