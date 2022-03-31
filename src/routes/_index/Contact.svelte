@@ -1,9 +1,38 @@
-<script context="module">
-  export const prerender = true;
+<script>
+  import Popup from "../_common/popup.svelte";
+  import { onMount } from "svelte";
+  let form, show = false, msg;
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    const formData = new FormData(form);
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+    .then(() => showPopup("submitted successfully."))
+    .catch((error) => {
+      console.error(error)
+      showPopup("Error while submiting.")
+      });
+  }
+  function showPopup(s) {
+    msg = s;
+    show = true;
+    const ele = document.querySelector("#popup"), time = 5;
+    ele.style.display = "flex"
+    ele.style.animation = time + "s ease-in slidedown";
+    setTimeout(() => {
+      ele.style.display = "none";
+    },time * 1000)
+  }
 </script>
 
+<Popup msg={msg}/>
 <main>
   <h1>Get in touch!</h1>
+  <button on:click={handleSubmit}>popup</button>
   <section>
     <a href="https://youtu.be/dQw4w9WgXcQ">
       <img src="/youtube.svg" alt="youtube">
@@ -15,7 +44,8 @@
       <img src="/hackerrank.svg" alt="hackerrank">
     </a>
   </section>
-  <form name="mails" form-name="mails" action="POST" data-netlify="true">
+  <form bind:this={form} on:submit={handleSubmit} 
+    name="mails" form-name="mails" data-netlify="true">
     <input
       autocomplete="off"
       type="text"

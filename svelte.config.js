@@ -2,18 +2,9 @@ import adapter from "@sveltejs/adapter-netlify";
 import proprocess from "svelte-preprocess";
 
 const config = {
-  preprocess: proprocess({
-    scss: {
-    }
-  }),
+  preprocess: proprocess(),
 	kit: {
-		adapter: adapter(),
-    prerender: {
-			crawl: true,
-			enabled: true,
-			onError: "continue",
-      entries: ["*"],
-		}
+		adapter: adapter()
 	}
 };
 
