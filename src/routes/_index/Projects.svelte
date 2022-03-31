@@ -15,7 +15,7 @@
   <h1>Technologies i use,</h1>
     <p>lines of code on github.</p>
     <img
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=AyushmanTripathy&layout=compact&exclude_repo=.config&hide_title=true&langs_count=6&theme=dark&hide_border=true&bg_color=303030"
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=AyushmanTripathy&layout=compact&exclude_repo=.config&hide_title=true&langs_count=8&theme=dark&hide_border=true&bg_color=303030"
     alt="most used language"
   />
 </main>
