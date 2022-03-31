@@ -12,10 +12,6 @@
     but in not having a goal to reach."
   </p>
   <p>
-    "You can't change your past,
-    But you can still f*ck up your future. So continue your grind."
-  </p>
-  <p>
     I am interested in
     <strong>Functional Programming</strong>, <strong>Web Development</strong>
     , <strong> Open Source </strong> and <strong> GNU/Linux</strong>.

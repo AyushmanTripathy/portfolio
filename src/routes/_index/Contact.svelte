@@ -3,19 +3,22 @@
   import { onMount } from "svelte";
   let form, show = false, msg;
 
+  function copyMail() {
+    const text = "ayushmantripathy2004@gmail.com";
+    navigator.clipboard.writeText(text).then(() => {
+      showPopup("mail copied to clipboard.")
+    }, (err) => {
+      showPopup("couldn't copy mail to clipboard.")
+      console.error('Async: Could not copy text: ', err);
+    });
+  }
   function handleSubmit(e) {
     e.preventDefault();
-    const formData = new FormData(form);
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
-    })
-    .then(() => showPopup("submitted successfully."))
-    .catch((error) => {
-      console.error(error)
-      showPopup("Error while submiting.")
-      });
+    const email = e.path[0][0].value;
+    const subject = e.path[0][1].value;
+    const body = `From ${email}%0A${e.path[0][2].value}`;
+    window.open(
+    `mailto:ayushmantripathy2004@gmail.com?subject=${subject}&body=${body}`);
   }
   function showPopup(s) {
     msg = s;
@@ -32,8 +35,8 @@
 <Popup msg={msg}/>
 <main>
   <h1>Get in touch!</h1>
-  <button on:click={handleSubmit}>popup</button>
   <section>
+    <img src="/mail.svg" on:click={copyMail} alt="mail">
     <a href="https://youtu.be/dQw4w9WgXcQ">
       <img src="/youtube.svg" alt="youtube">
     </a>
@@ -46,13 +49,6 @@
   </section>
   <form bind:this={form} on:submit={handleSubmit} 
     name="mails" form-name="mails" data-netlify="true">
-    <input
-      autocomplete="off"
-      type="text"
-      name="name"
-      placeholder="Your name"
-      required
-    />
     <input
       autocomplete="off"
       type="email"
