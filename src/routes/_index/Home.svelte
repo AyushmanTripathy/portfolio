@@ -4,7 +4,7 @@
   let text = "";
   onMount(() => {
      let arrIndex = 0, index = 0, done = false;
-     const strings = ["Competitive Programmer.","Full Stack Web Developer."]
+     const strings = ["Full Stack Web Developer."]
      const write = (string) => {
        if (done) {
          text = text.slice(0,-1);
