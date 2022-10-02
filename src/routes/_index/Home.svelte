@@ -4,7 +4,7 @@
   let text = "";
   onMount(() => {
      let arrIndex = 0, index = 0, done = false;
-     const strings = ["Full Stack Web Developer."]
+     const strings = ["Hello Friend!","I am a Full Stack Web Developer."]
      const write = (string) => {
        if (done) {
          text = text.slice(0,-1);
@@ -34,7 +34,7 @@
 <main>
   <img src="/logo.png" alt="logo" />
   <h1>Ayushman Tripathy</h1>
-  <p>A {text}</p>
+  <p>> {text}</p>
 </main>
 
 <style lang="scss">

@@ -6,7 +6,7 @@
 <main>
   <h1>My Links</h1>
   <p>Explore some good corners of internet.</p>
-  <p><strong>Yotubers</strong></p>
+  <p><strong>Youtubers</strong></p>
   <a href="https://www.youtube.com/c/Fireship">
     Fireship (web development)
   </a>
@@ -27,7 +27,7 @@
   </a>
   <p><strong>Stand up comedians</strong></p>
   <a href="https://www.youtube.com/c/AbhishekUpmanyuu">
-    AbhishekUpmanyu
+    Abhishek Upmanyu
   </a>
   <a href="https://www.youtube.com/c/AnubhavSinghBassi">
     Anubhav Singh Bassi

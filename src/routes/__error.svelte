@@ -4,8 +4,9 @@
 
 <BackButton url="/" />
 <main>
-  <h1>404 Not Found.</h1>
+  <h1>404 Error.</h1>
   <p><strong>Other Pages,</strong></p>
+  <a href="/">home/</a>
   <a href="/about">about/</a>
   <a href="/links">links/</a>
 </main>
