@@ -1,43 +1,48 @@
 <script>
   import BackButton from "./_common/backbutton.svelte";
+  import { onMount } from "svelte";
+
+  let headings = [], names = [], links = [];
+  onMount(async () => {
+    let res = await fetch("/links.txt");
+    res = await res.text()
+    
+    res = res.split("|")
+    let i =  1;
+    while (i < res.length) {
+      headings.push(res[i]);
+      const a = headings.length - 1;
+      i++;
+      const temp = res[i].split("+").map(x => x.trim()).filter(Boolean);
+      let x = 0;
+      names[a] = [];
+      links[a] = [];
+      while (x < temp.length) {
+        links[a].push(temp[x])
+        names[a].push(temp[x + 1])
+        x += 2;
+      }
+      i++;
+    }
+    
+    console.log(links,names)
+    headings = headings;
+    names = names;
+    links = links;
+  })
 </script>
 
 <BackButton url="/"/>
 <main>
   <h1>My Links</h1>
   <p>Explore some good corners of internet.</p>
-  <p><strong>Youtubers</strong></p>
-  <a href="https://www.youtube.com/c/Fireship">
-    Fireship (web development)
-  </a>
-  <a href="https://www.youtube.com/user/Computerphile">
-    Computerphile (computer science)
-  </a>
-  <a href="https://www.youtube.com/c/SebastianLague">
-    SebastianLague (coding adventures)
-  </a>
-  <a href="https://www.youtube.com/c/BugsWriter0x1337">
-    BugsWriter (GNU/Linux)
-  </a>
-  <a href="https://www.youtube.com/c/VitalityFitnessScience">
-    Vitality (fitness)
-  </a>
-  <a href="https://www.youtube.com/c/KrautandTea">
-    Kraut (history)
-  </a>
-  <p><strong>Stand up comedians</strong></p>
-  <a href="https://www.youtube.com/c/AbhishekUpmanyuu">
-    Abhishek Upmanyu
-  </a>
-  <a href="https://www.youtube.com/c/AnubhavSinghBassi">
-    Anubhav Singh Bassi
-  </a>
-  <a href="https://www.youtube.com/virdas">
-    Vir Das
-  </a>
-  <a href="https://www.youtube.com/c/ZakirKhan">
-    Zakir Khan
-  </a>
+
+  {#each headings as heading,i}
+    <p><strong>{heading}</strong></p>
+    {#each links[i] as link,x}
+      <a href="{link}">{names[i][x]}</a>
+    {/each}
+  {/each}
 </main>
 
 <style lang="scss">

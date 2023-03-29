@@ -2,15 +2,17 @@
 
 Javascript +
 Python +
+SQL +
 C
 
 | Frameworks |
 
 Svelte +
-Pytorch
+Tensorflow +
+Sass
 
 | Tools |
 
 Bash + 
-sed & Awk +
-nginx
+Neovim +
+ssh

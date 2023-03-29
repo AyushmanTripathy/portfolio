@@ -37,7 +37,7 @@
   <h1>Get in touch!</h1>
   <section>
     <img src="/mail.svg" on:click={copyMail} alt="mail">
-    <a href="https://youtu.be/dQw4w9WgXcQ">
+    <a href="https://www.youtube.com/@ayushmantripathy1917">
       <img src="/youtube.svg" alt="youtube">
     </a>
     <a href="https://github.com/AyushmanTripathy/">
