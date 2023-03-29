@@ -1,0 +1,16 @@
+| Languages |
+
+Javascript +
+Python +
+C
+
+| Frameworks |
+
+Svelte +
+Pytorch
+
+| Tools |
+
+Bash + 
+sed & Awk +
+nginx

@@ -74,10 +74,13 @@
   </form>
   <footer>
     <p>
-      made with ❤ and svelte.js <br>
+      made with ❤ and svelte.js by @AyushmanTripathy<br>
       <a href="https://github.com/AyushmanTripathy/portfolio"> source code</a>
       |
-      <a href="http://motherfuckingwebsite.com/"> minimal version </a>
+      <a href="https://kit.svelte.dev/"> svelte </a>
+      |
+      <a
+      href="https://en.wikipedia.org/wiki/Free_and_open-source_software">FOSS</a>
     </p>
   </footer>
 </main>
@@ -88,6 +91,7 @@
     @include section(140vh,100vw);
     @include cover("/wave.svg");
     @include flex(column);
+    background-color: $pri;
     justify-content: space-between;
     align-items: center;
     padding-top: 2vh;
@@ -127,6 +131,7 @@
     @include mono;
     text-align:center;
     color: $pri;
+    background-color: $pri;
   }
   a {
     color: $pri;

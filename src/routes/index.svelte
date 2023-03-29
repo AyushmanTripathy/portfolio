@@ -3,6 +3,7 @@
   import About from "./_index/About.svelte";
   import Projects from "./_index/Projects.svelte";
   import Contact from "./_index/Contact.svelte";
+  import Tech from "./_index/Tech.svelte";
 </script>
 
 <Home />
@@ -10,6 +11,7 @@
   <section></section>
   <About />
   <Projects />
+  <Tech />
   <Contact />
 </main>
 

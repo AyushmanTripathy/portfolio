@@ -1,25 +1,26 @@
 <main>
   <h1> Hello there! 👋</h1>
-  <p>
-    I am a self-taught full stack web developer.
-    I am {new Date().getYear() - 104} year old Javascript and Linux enthusiast.
+  <p class="para">
+    I am a {new Date().getYear() - 104} year old self-taught full stack web developer
+    and Linux enthusiast.
     I am from the small town of
     <a href="https://en.wikipedia.org/wiki/Bhawanipatna"> Bhawanipatna </a>
     in Kalahandi, Odisha, India.
   </p>
-  <p>
+  <p class="para">
     "The greatest tragedy of life is'nt in not reaching your goal,
     but in not having a goal to reach."
   </p>
-  <p>
+  <p class="para">
     I am interested in
-    <strong>Functional Programming</strong>, <strong>Web Development</strong>
-    , <strong> Open Source </strong> and <strong> GNU/Linux</strong>.
+    <strong>Programming</strong>, <strong>Web Development</strong>,
+    <strong> FOSS </strong> and <strong> GNU/Linux</strong>.
   </p>
-  <p>
-    <a href="/about"> More About Me </a> |
-    <a href="/links"> Links </a>
-  </p>
+  <div id="links">
+    <a href="/about"> Read More About Me</a> 
+    <p> | </p>
+    <a href="/links">Good Corners of Internet</a>
+  </div>
 </main>
 
 <style lang="scss">
@@ -40,7 +41,13 @@
     background-color: $pri;
     color: $light;
   }
-  p {
+  .para {
     @include para;
+  }
+  div {
+    @include grid(1fr 1fr 1fr,1fr);
+    @include section(fit-content,90vw);
+    max-width: 500px;
+    text-align:center;
   }
 </style>

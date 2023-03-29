@@ -1,23 +1,39 @@
 <script>
   import Pin from "./Pin.svelte";
+  import { onMount } from "svelte";
+
+  let titles= [], des = [];
+  onMount(async () => {
+    let res= await fetch("projects.txt");
+    res = await res.text()
+    res = res.split("|").map((x) => x.trim()).filter(Boolean);
+    for(let i = 0;i<res.length;i++) {
+      titles.push(res[i]);
+      i++;
+      des.push(res[i].split("+").map(x => x.trim()).filter(Boolean))
+    }
+    titles = titles;
+    des = des;
+  })
+
+  function handleClick(ele) {
+    location.href = "https://github.com/AyushmanTripathy/" + ele.srcElement.id;
+  }
 </script>
 
 <main>
   <h1>Some of my projects.</h1>
   <section>
-    <Pin repo="uhc"/>
-    <Pin repo="pipe-script" />
-    <Pin repo="razite" />
-    <Pin repo="tik-tac-toe-ai" />
-    <Pin repo="editmd" />
-    <Pin repo="procedural_terrain_generation" />
+    {#each titles as title,i}
+      <div on:click={handleClick} id="{title}">
+        <h2 id="{title}">{title.replaceAll(/-|_/g," ")}</h2>
+        <p id="{title}">{des[i]}</p>
+      </div>
+    {/each}
   </section>
-  <h1>Technologies i use,</h1>
-    <p>lines of code on github.</p>
-    <img
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=AyushmanTripathy&layout=compact&exclude_repo=.config&hide_title=true&langs_count=8&theme=dark&hide_border=true&bg_color=303030"
-    alt="most used language"
-  />
+  <p class="para">More on my 
+    <a href="https://github.com/AyushmanTripathy/">Github</a>.
+  </p>
 </main>
 
 <style lang="scss">
@@ -29,20 +45,26 @@
     @include mono;
     background-color: $pri;
   }
-  img {
-    width: 90vw;
-    max-width: 460px;
-    height: 160px;
-    aspect-ratio: 1;
-  }
-  section {
-    @include section(fit-content,fit-content);
-    @include grid(1fr 1fr, 1fr);
-  }
-  p {
+  .para {
     @include para;
   }
-  @media screen and (max-width: $mobile) {
+  section {
+    @include section(fit-content,90vw);
+    @include grid(1fr 1fr, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    max-width: 700px;
+  }
+  div {
+    border: 3px solid $sec;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 3px;
+  }
+  div:hover {
+    border-color: $hl;
+  }
+  @media screen and (max-width: 500px) {
     section {
       grid-template-columns: 1fr;
     }

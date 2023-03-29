@@ -7,21 +7,21 @@
 
 <main>
   <h1>I am<br>Ayushman Tripathy.</h1>
-  <p>
-    I am a self-taught full stack web developer.
-    I am {new Date().getYear() - 104} year old Javascript and Linux enthusiast.
-    I am from the small town of 
+  <p class="para">
+    I am a {new Date().getYear() - 104} year old self-taught full stack web developer
+    and Linux enthusiast.
+    I am from the small town of
     <a href="https://en.wikipedia.org/wiki/Bhawanipatna"> Bhawanipatna </a>
     in Kalahandi, Odisha, India.
   </p>
-  <p>
-    "The greatest tragedy of life is'nt in not reaching your goal, 
+  <p class="para">
+    "The greatest tragedy of life is'nt in not reaching your goal,
     but in not having a goal to reach."
   </p>
-  <p>
+  <p class="para">
     I am interested in
-    <strong>Functional Programming</strong>, <strong>Web Development</strong>
-    , <strong> Open Source </strong> and <strong> GNU/Linux</strong>.
+    <strong>Programming</strong>, <strong>Web Development</strong>,
+    <strong> FOSS </strong> and <strong> GNU/Linux</strong>.
   </p>
 </main>
 

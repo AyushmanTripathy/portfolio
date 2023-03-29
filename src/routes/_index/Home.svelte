@@ -4,7 +4,7 @@
   let text = "";
   onMount(() => {
      let arrIndex = 0, index = 0, done = false;
-     const strings = ["Hello Friend!","I am a Full Stack Web Developer."]
+     const strings = ["Hello Friend!////////////////","I am a Developer."]
      const write = (string) => {
        if (done) {
          text = text.slice(0,-1);
@@ -13,7 +13,7 @@
            return 1;
          }
        } else {
-         text += string[index];
+         if(string[index] != "/") text += string[index];
          index++;
          if (index >= string.length) {
            index = 0;
@@ -48,6 +48,7 @@
     @include flex-center;
     @include cover("/layer.svg");
 
+    background-color: $pri;
     z-index: 0;
     color: $light;
   }
@@ -60,16 +61,14 @@
   }
   p {
     border-right: 6px solid $light;
-    animation: 550ms infinite blink;
+    animation: 1000ms infinite blink;
     max-width: 80vw;
     text-align:center;
   }
   @keyframes blink {
-    from {
-      border-color: $light;
-    }
-    to {
-      border-color: $pri;
-    }
+    0%  { border-color: $pri; }
+    20% { border-color: $light; }
+    80% { border-color: $light; }
+    100% {border-color: $pri }
   }
 </style>
