@@ -16,6 +16,7 @@
     <strong>Programming</strong>, <strong>Web Development</strong>,
     <strong> FOSS </strong> and <strong> GNU/Linux</strong>.
   </p>
+  <p class="para"> I use <strong>Arch</strong> btw!</p>
   <div id="links">
     <a href="/about"> Read More About Me</a> 
     <p> | </p>

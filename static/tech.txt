@@ -15,4 +15,5 @@ Sass
 
 Bash + 
 Neovim +
+Linux +
 ssh
