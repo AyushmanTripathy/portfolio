@@ -1,34 +1,23 @@
 <script>
-  import BackButton from "./_common/backbutton.svelte";
+  import BackButton from "../_common/backbutton.svelte";
+  import load from "$lib/loader.js";
   import { onMount } from "svelte";
 
   let headings = [], names = [], links = [];
   onMount(async () => {
-    let res = await fetch("/links.txt");
-    res = await res.text()
-    
-    res = res.split("|")
-    let i =  1;
-    while (i < res.length) {
-      headings.push(res[i]);
-      const a = headings.length - 1;
-      i++;
-      const temp = res[i].split("+").map(x => x.trim()).filter(Boolean);
-      let x = 0;
-      names[a] = [];
-      links[a] = [];
-      while (x < temp.length) {
-        links[a].push(temp[x])
-        names[a].push(temp[x + 1])
-        x += 2;
+    const arr = await load("links.txt");
+    const tmpNames = [], tmpLinks = [];
+    for (let i = 0; i < arr[0].length; i++) {
+      tmpNames[i] = [];
+      tmpLinks[i] = [];
+      for (let x = 0; x < arr[1][i].length; x += 2) {
+        tmpNames[i].push(arr[1][i][x + 1]);
+        tmpLinks[i].push(arr[1][i][x]);
       }
-      i++;
     }
-    
-    console.log(links,names)
-    headings = headings;
-    names = names;
-    links = links;
+    headings = arr[0];
+    names = tmpNames;
+    links = tmpLinks;
   })
 </script>
 
@@ -46,7 +35,6 @@
 </main>
 
 <style lang="scss">
-  @import "../app.scss";
   main {
     @include section(fit-content,100vw);
     @include absolute;

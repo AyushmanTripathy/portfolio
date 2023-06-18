@@ -3,11 +3,12 @@
 Javascript +
 Python +
 SQL +
-C
+C & C with classes 😉
 
 | Frameworks |
 
 Svelte +
+React +
 Tensorflow +
 Sass
 

@@ -38,7 +38,6 @@
 </main>
 
 <style lang="scss">
-  @import "../../app.scss";
   main {
     @include fullscreen;
     @include fixed(0,0);

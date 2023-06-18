@@ -25,7 +25,6 @@
 </main>
 
 <style lang="scss">
-  @import "../../app.scss";
   main {
     @include section(fit-content, 100vw);
     @include flex(column);

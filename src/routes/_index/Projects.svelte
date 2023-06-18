@@ -1,19 +1,13 @@
 <script>
   import Pin from "./Pin.svelte";
+  import load from "$lib/loader.js"
   import { onMount } from "svelte";
 
   let titles= [], des = [];
   onMount(async () => {
-    let res= await fetch("projects.txt");
-    res = await res.text()
-    res = res.split("|").map((x) => x.trim()).filter(Boolean);
-    for(let i = 0;i<res.length;i++) {
-      titles.push(res[i]);
-      i++;
-      des.push(res[i].split("+").map(x => x.trim()).filter(Boolean))
-    }
-    titles = titles;
-    des = des;
+    const arr = await load("projects.txt");
+    titles = arr[0];
+    des = arr[1];
   })
 
   function handleClick(ele) {
@@ -37,7 +31,6 @@
 </main>
 
 <style lang="scss">
-  @import "../../app.scss";
   main {
     @include section(fit-content,100vw);
     @include flex(column);

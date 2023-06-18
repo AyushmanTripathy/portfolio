@@ -86,9 +86,8 @@
 </main>
 
 <style lang="scss">
-  @import "../../app.scss";
   main {
-    @include section(140vh,100vw);
+    @include section(120vh,100vw);
     @include cover("/wave.svg");
     @include flex(column);
     background-color: $pri;
@@ -117,7 +116,7 @@
   form {
     @include shadow;
     @include flex(column);
-    @include section(90vh,$width);
+    @include section(70vh,$width);
     justify-content: space-evenly;
     align-items: center;
     border-radius: 8px;

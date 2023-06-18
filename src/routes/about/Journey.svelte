@@ -1,18 +1,12 @@
 <script>
   import { onMount } from "svelte";
+  import load from "$lib/loader.js"
 
   let months = [], notes = [];
   onMount(async () => {
-    let res= await fetch("journey.txt");
-    res = await res.text()
-    res = res.split("|").map((x) => x.trim()).filter(Boolean);
-    for(let i = 0;i<res.length;i++) {
-      months.push(res[i]);
-      i++;
-      notes.push(res[i].split("+").map(x => x.trim()).filter(Boolean))
-    }
-    months = months;
-    notes = notes;
+    const arr = await load("journey.txt");
+    months = arr[0];
+    notes = arr[1];
   })
   const isEven = (x) => x % 2 == 0;
 </script>

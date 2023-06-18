@@ -4,14 +4,14 @@ The useful html compiler
 | pipe-script |
 A programming language that revolves around piping
 
+| omnicient |
+One who has answers to all your questions. (provided they are available on google.com)
+
 | razite |
 A lightweight API client
 
 | tik-tac-toe-ai |
-the unbeatable tik tac toe ai using minmax algorithim
+The unbeatable tik tac toe ai using minmax algorithim
 
-| editmd |
-edit markdown files with live preview 
-
-| procedural_terrain_generation |
-procedural terrain generation with two layes of Perlin noise
+| pips |
+A functional, dynamically weakly typed, interpreted, indented programming language.

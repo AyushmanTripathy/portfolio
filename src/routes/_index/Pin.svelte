@@ -10,7 +10,6 @@
 </a>
 
 <style lang="scss">
-  @import "../../app.scss";
   img {
     width: 100%;
     aspect-ratio:3/1;
