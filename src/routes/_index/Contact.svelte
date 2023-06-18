@@ -1,16 +1,21 @@
 <script>
   import Popup from "../_common/popup.svelte";
   import { onMount } from "svelte";
-  let form, show = false, msg;
+  let form,
+    show = false,
+    msg;
 
   function copyMail() {
     const text = "ayushmantripathy2004@gmail.com";
-    navigator.clipboard.writeText(text).then(() => {
-      showPopup("mail copied to clipboard.")
-    }, (err) => {
-      showPopup("couldn't copy mail to clipboard.")
-      console.error('Async: Could not copy text: ', err);
-    });
+    navigator.clipboard.writeText(text).then(
+      () => {
+        showPopup("mail copied to clipboard.");
+      },
+      (err) => {
+        showPopup("couldn't copy mail to clipboard.");
+        console.error("Async: Could not copy text: ", err);
+      }
+    );
   }
   function handleSubmit(e) {
     e.preventDefault();
@@ -18,37 +23,44 @@
     const subject = e.path[0][1].value;
     const body = `From ${email}%0A${e.path[0][2].value}`;
     window.open(
-    `mailto:ayushmantripathy2004@gmail.com?subject=${subject}&body=${body}`);
+      `mailto:ayushmantripathy2004@gmail.com?subject=${subject}&body=${body}`
+    );
   }
   function showPopup(s) {
     msg = s;
     show = true;
-    const ele = document.querySelector("#popup"), time = 5;
-    ele.style.display = "flex"
+    const ele = document.querySelector("#popup"),
+      time = 5;
+    ele.style.display = "flex";
     ele.style.animation = time + "s ease-in slidedown";
     setTimeout(() => {
       ele.style.display = "none";
-    },time * 1000)
+    }, time * 1000);
   }
 </script>
 
-<Popup msg={msg}/>
+<Popup msg="{msg}" />
 <main>
   <h1>Get in touch!</h1>
   <section>
-    <img src="/mail.svg" on:click={copyMail} alt="mail">
+    <img src="/mail.svg" on:click="{copyMail}" alt="mail" />
     <a href="https://www.youtube.com/@ayushmantripathy1917">
-      <img src="/youtube.svg" alt="youtube">
+      <img src="/youtube.svg" alt="youtube" />
     </a>
     <a href="https://github.com/AyushmanTripathy/">
-      <img src="/github.svg" alt="github">
+      <img src="/github.svg" alt="github" />
     </a>
     <a href="https://www.hackerrank.com/ayushmantripath3">
-      <img src="/hackerrank.svg" alt="hackerrank">
+      <img src="/hackerrank.svg" alt="hackerrank" />
     </a>
   </section>
-  <form bind:this={form} on:submit={handleSubmit} 
-    name="mails" form-name="mails" data-netlify="true">
+  <form
+    bind:this="{form}"
+    on:submit="{handleSubmit}"
+    name="mails"
+    form-name="mails"
+    data-netlify="true"
+  >
     <input
       autocomplete="off"
       type="email"
@@ -72,32 +84,22 @@
     ></textarea>
     <input type="submit" value="Submit" />
   </form>
-  <footer>
-    <p>
-      made with ❤ and svelte.js by @AyushmanTripathy<br>
-      <a href="https://github.com/AyushmanTripathy/portfolio"> source code</a>
-      |
-      <a href="https://kit.svelte.dev/"> svelte </a>
-      |
-      <a
-      href="https://en.wikipedia.org/wiki/Free_and_open-source_software">FOSS</a>
-    </p>
-  </footer>
 </main>
 
 <style lang="scss">
   main {
-    @include section(120vh,100vw);
+    @include section(120vh, 100vw);
     @include cover("/wave.svg");
     @include flex(column);
+    max-height: 1300px;
     background-color: $pri;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding-top: 2vh;
   }
   $width: 87vw;
   section {
-    @include section(fit-content,$width);
+    @include section(fit-content, $width);
     @include shadow;
     @include flex(row);
 
@@ -116,27 +118,16 @@
   form {
     @include shadow;
     @include flex(column);
-    @include section(70vh,$width);
+    @include section(70vh, $width);
     justify-content: space-evenly;
     align-items: center;
     border-radius: 8px;
     max-width: 500px;
     background-color: $sec;
   }
-  footer {
-    @include section(fit-content,100vw);
-    @include flex(column);
-    @include flex-center;
-    @include mono;
-    text-align:center;
-    color: $pri;
-    background-color: $pri;
-  }
-  a {
-    color: $pri;
-  }
-  textarea, input {
-    @include section(9%,80%);
+  textarea,
+  input {
+    @include section(9%, 80%);
     @include mono;
     font-weight: 500;
     font-size: 1.1rem;

@@ -1,10 +1,6 @@
 <script>
   import { onMount } from "svelte";
   let pointer, scrollFactor;
-  const back = () => {
-    document.location.href="/";
-    console.log(op)
-  }
   onMount(() => {
     document.onmousemove = ({ clientX, clientY }) => {
       const center_x = (pointer.offsetLeft) + (pointer.width/2);
@@ -28,7 +24,6 @@
 <slot></slot>
 
 <style lang="scss">
-  @import "../app.scss";
   div {
     @include fixed(0,0);
     @include section(3px,0);
