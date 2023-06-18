@@ -30,8 +30,6 @@
     @include section(fit-content, 100vw);
     @include flex(column);
     @include flex-center;
-    background-color: $pri;
-    color: $light;
     text-align: center;
     padding-top: 40vh;
   }

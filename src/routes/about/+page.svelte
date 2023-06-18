@@ -19,5 +19,7 @@
     @include flex-center;
     min-height: calc(100vh - $page-bottom-padding);
     padding-bottom: $page-bottom-padding;
+    background-color: $pri;
+    color: $light;
   }
 </style>
