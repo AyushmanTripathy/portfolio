@@ -28,9 +28,8 @@
 </main>
 
 <style lang="scss">
-  @import "../app.scss";
   main {
-    @include absolute;
+    @include fixed;
     @include section(fit-content, 100vw);
     @include flex(column);
     z-index: 1;
@@ -46,10 +45,10 @@
     @include flex-center;
     @include mono;
     text-align: center;
-    color: $pri;
+    color: $light;
     background-color: $pri;
   }
   a {
-    color: $pri;
+    color: $light;
   }
 </style>

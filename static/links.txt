@@ -12,7 +12,7 @@ jdh +
 https://www.youtube.com/c/Fireship+
 Fireship (software development)+
 https://www.youtube.com/@InternetHistorian +
-Internet Historian (Internet Happenings)+
+Internet Historian+
 https://www.youtube.com/user/Computerphile+
 Computerphile (computer science)+
 https://www.youtube.com/@SsethTzeentach+
