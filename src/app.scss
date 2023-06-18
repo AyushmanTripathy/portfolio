@@ -7,6 +7,8 @@ $light: #bbb;
 $pin-max-width: 450px;
 $mobile: 860px;
 
+$page-index: 2;
+
 @mixin shadow {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
 }

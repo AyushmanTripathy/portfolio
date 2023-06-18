@@ -37,6 +37,7 @@
     @include flex-center;
     @include mono;
     background-color: $pri;
+    z-index: $page-index;
   }
   .para {
     @include para;

@@ -32,6 +32,7 @@
     @include mono;
 
     background-color: $pri;
+    z-index: $page-index;
     color: $light;
     padding-bottom: 20px;
   }

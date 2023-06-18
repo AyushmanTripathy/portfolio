@@ -47,8 +47,8 @@
     @include flex-center;
     @include cover("/layer.svg");
 
-    background-color: $pri;
     z-index: 0;
+    background-color: $pri;
     color: $light;
   }
   img {

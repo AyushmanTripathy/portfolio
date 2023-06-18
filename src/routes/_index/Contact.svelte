@@ -94,6 +94,7 @@
     @include cover("/wave.svg");
     @include flex(column);
     max-height: 1300px;
+    z-index: $page-index;
     background-color: $pri;
     justify-content: space-evenly;
     align-items: center;

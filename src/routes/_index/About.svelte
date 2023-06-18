@@ -40,6 +40,7 @@
     border-top-right-radius: $radius;
     background-color: $pri;
     color: $light;
+    z-index: $page-index;
   }
   .para {
     @include para;
