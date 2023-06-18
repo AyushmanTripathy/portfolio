@@ -36,8 +36,6 @@
     @include flex(column);
     @include flex-center;
     @include mono;
-    color: $light;
-    background-color: $pri;
     text-align:center;
   }
   section {
