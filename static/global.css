@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Source+Code+Pro:wght@200&display=swap");
 
+body {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
 h1,
 h2 {
   font-family: "Caveat", cursive;
