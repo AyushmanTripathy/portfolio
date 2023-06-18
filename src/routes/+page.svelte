@@ -29,10 +29,7 @@
 
 <style lang="scss">
   main {
-    position: sticky;
-    top: 0;
-    left: 0;
-
+    @include absolute;
     @include section(fit-content, 100vw);
     @include flex(column);
     z-index: $page-index;

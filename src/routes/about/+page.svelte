@@ -4,17 +4,20 @@
   import BackButton from "../_common/backbutton.svelte";
 </script>
 
-<BackButton url="/"/>
+<BackButton url="/" />
 <main>
   <Home />
-  <Journey/>
+  <Journey />
+  <div></div>
 </main>
 
 <style lang="scss">
   main {
-    @include section(fit-content,100vw);
+    @include section(fit-content, 100vw);
     @include absolute;
     @include flex(column);
     @include flex-center;
+    min-height: calc(100vh - $page-bottom-padding);
+    padding-bottom: $page-bottom-padding;
   }
 </style>

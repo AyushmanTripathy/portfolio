@@ -41,9 +41,11 @@
     @include flex(column);
     @include flex-center;
     @include mono;
-    min-height: 100vh;
+
+    min-height: calc(100vh - $page-bottom-padding);
     background-color: $pri;
     color: $light;
+    padding-bottom: $page-bottom-padding;
   }
   h1 {
     border-bottom: 1px solid $hl;

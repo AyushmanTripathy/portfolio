@@ -9,22 +9,25 @@
 </main>
 
 <style lang="scss">
-  @import "../../app.scss";
+  $popup-index: 11;
+
   main {
     @include flex(column);
     @include flex-center;
-    @include fixed(0,0);
+    @include fixed(0, 0);
     @include section(fit-content, 100vw);
-    display:none;
+    display: none;
+    z-index: $popup-index;
     background: transparent;
   }
   div {
     @include mono;
     @include shadow;
-    z-index: 11;
+
     width: 80vw;
+    z-index: $popup-index;
     max-width: 400px;
-    text-align:center;
+    text-align: center;
     border-radius: 10px;
     background-color: $sec;
     padding: 10px;

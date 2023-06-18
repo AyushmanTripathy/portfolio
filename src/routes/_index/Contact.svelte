@@ -9,15 +9,13 @@
     const text = "ayushmantripathy2004@gmail.com";
     if (navigator && navigator.clipboard) {
       navigator.clipboard.writeText(text).then(
-        () => {
-          showPopup("mail copied to clipboard.");
-        },
+        () => showPopup("mail copied to clipboard."),
         (err) => {
           showPopup("couldn't copy mail to clipboard.");
           console.error("Async: Could not copy text: ", err);
         }
       );
-    } else showPopup("clipboard not supported by browser")
+    } else showPopup("clipboard not supported by browser");
   }
   function handleSubmit(e) {
     e.preventDefault();
@@ -90,7 +88,7 @@
 
 <style lang="scss">
   main {
-    @include section(120vh, 100vw);
+    @include section(fit-content, 100vw);
     @include cover("/wave.svg");
     @include flex(column);
     max-height: 1300px;
@@ -98,7 +96,10 @@
     background-color: $pri;
     justify-content: space-evenly;
     align-items: center;
+
+    gap: 2vh;
     padding-top: 2vh;
+    padding-bottom: 2vh;
   }
   $width: 87vw;
   section {

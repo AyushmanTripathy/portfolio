@@ -17,7 +17,6 @@
 </a>
 
 <style lang="scss">
-  @import "../../app.scss";
   svg {
     @include section(35px,35px);
     @include shadow;
