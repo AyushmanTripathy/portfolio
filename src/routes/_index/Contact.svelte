@@ -7,15 +7,17 @@
 
   function copyMail() {
     const text = "ayushmantripathy2004@gmail.com";
-    navigator.clipboard.writeText(text).then(
-      () => {
-        showPopup("mail copied to clipboard.");
-      },
-      (err) => {
-        showPopup("couldn't copy mail to clipboard.");
-        console.error("Async: Could not copy text: ", err);
-      }
-    );
+    if (navigator && navigator.clipboard) {
+      navigator.clipboard.writeText(text).then(
+        () => {
+          showPopup("mail copied to clipboard.");
+        },
+        (err) => {
+          showPopup("couldn't copy mail to clipboard.");
+          console.error("Async: Could not copy text: ", err);
+        }
+      );
+    } else showPopup("clipboard not supported by browser")
   }
   function handleSubmit(e) {
     e.preventDefault();

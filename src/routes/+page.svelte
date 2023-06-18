@@ -29,7 +29,7 @@
 
 <style lang="scss">
   main {
-    @include fixed;
+    @include absolute;
     @include section(fit-content, 100vw);
     @include flex(column);
     z-index: 1;
