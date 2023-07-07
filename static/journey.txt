@@ -1,9 +1,11 @@
 | June 2023 |
 Started with Arch linux +
+Intro to algorithims on MIT OCW +
 Worked on omnicient
 
 | May 2023 |
-My 12th result. (92%) +
+My 12th result. (91%) +
+3th rank, class 12th, JNV Narla (batch 2022-23) +
 Worked on Pipescript
 
 | April 2023 |
