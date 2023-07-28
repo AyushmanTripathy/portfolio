@@ -50,6 +50,9 @@
     <a href="https://github.com/AyushmanTripathy/">
       <img src="/github.svg" alt="github" />
     </a>
+    <a href="https://www.linkedin.com/in/ayushman-tripathy">
+      <img src="/linkedin.svg" alt="linkedin" />
+    </a>
     <a href="https://www.hackerrank.com/ayushmantripath3">
       <img src="/hackerrank.svg" alt="hackerrank" />
     </a>
@@ -116,7 +119,7 @@
     border-radius: 8px;
   }
   img {
-    height: 50px;
+    height: 30px;
     aspect-ratio: 1;
   }
   form {
