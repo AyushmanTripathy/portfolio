@@ -1,21 +1,21 @@
 {
-	"name": "portfolio",
-	"version": "0.0.1",
-	"private": true,
-	"scripts": {
-		"dev": "rm -rf .svelte-kit && vite dev",
-		"build": "vite build",
-		"preview": "vite preview"
-	},
-	"devDependencies": {
-		"@sveltejs/kit": "^1.5.0",
-		"sass": "^1.63.4",
-		"svelte": "^3.54.0",
-		"svelte-preprocess": "^5.0.4",
-		"vite": "^4.3.0"
-	},
-	"type": "module",
-	"dependencies": {
-		"@sveltejs/adapter-netlify": "^2.0.7"
-	}
+  "name": "portfolio",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "rm -rf .svelte-kit && vite dev",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@sveltejs/kit": "^1.5.0",
+    "sass": "^1.63.4",
+    "svelte": "^3.54.0",
+    "svelte-preprocess": "^5.0.4",
+    "vite": "^4.3.0"
+  },
+  "type": "module",
+  "dependencies": {
+    "@sveltejs/adapter-netlify": "^2.0.7"
+  }
 }
