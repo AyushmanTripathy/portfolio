@@ -8,8 +8,8 @@
 <main>
   <h1>I am<br />Ayushman Tripathy.</h1>
   <p class="para">
-    I am a {new Date().getYear() - 104} year old self-taught full stack web
-    developer and Linux enthusiast. I am from the small town of
+    I am a {new Date().getYear() - 104} year old full stack web
+    developer and Linux enthusiast. currently Freshman at GIETU, Gunupur. I am from the small town of
     <a href="https://en.wikipedia.org/wiki/Bhawanipatna"> Bhawanipatna </a>
     in Kalahandi, Odisha, India.
   </p>
