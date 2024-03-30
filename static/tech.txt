@@ -10,6 +10,7 @@ C & C with classes 😉
 Svelte +
 React +
 Tensorflow +
+Flask +
 Sass
 
 | Tools |
