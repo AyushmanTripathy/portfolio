@@ -3,6 +3,7 @@
 Javascript +
 Python +
 SQL +
+Lua +
 C & C with classes 😉
 
 | Frameworks |
