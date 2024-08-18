@@ -54,6 +54,7 @@
     background-color: $sec;
     border-radius: 10px;
     padding: 10px;
+    cursor: pointer;
   }
   div:hover {
     border-color: $hl;
