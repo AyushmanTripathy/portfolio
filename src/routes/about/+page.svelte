@@ -1,12 +1,10 @@
 <script>
-  import Home from "./Home.svelte";
   import Journey from "./Journey.svelte";
   import BackButton from "../_common/backbutton.svelte";
 </script>
 
 <BackButton url="/" />
 <main>
-  <Home />
   <Journey />
   <div></div>
 </main>

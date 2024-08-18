@@ -36,6 +36,7 @@
     @include flex(column);
     @include flex-center;
     @include mono;
+    padding-top: 40vh;
     text-align:center;
   }
   section {

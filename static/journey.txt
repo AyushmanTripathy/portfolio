@@ -1,3 +1,6 @@
+| July 2024 |
+Lonavala trip
+
 | June 2024 |
 Got into Lua +
 Ported Neovim config to Lua +

@@ -1,17 +1,17 @@
-| uhc |
-The useful html compiler
+| pips |
+A functional, dynamically weakly typed, interpreted, indented programming language.
 
-| pipe-script |
-A programming language that revolves around piping
+| SuperTic |
+Good old tic tac toe with some twists ;)
 
-| omnicient |
+| UHC |
+The useful html compiler, for when you don't need a javascript framework.
+
+| Omnicient |
 One who has answers to all your questions. (provided they are available on google.com)
 
-| razite |
+| Razite |
 A lightweight API client
 
 | tik-tac-toe-ai |
 The unbeatable tik tac toe ai using minmax algorithim
-
-| pips |
-A functional, dynamically weakly typed, interpreted, indented programming language.
