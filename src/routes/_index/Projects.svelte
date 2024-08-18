@@ -50,10 +50,10 @@
     max-width: 700px;
   }
   div {
-    border: 3px solid $sec;
+    @include shadow;
+    background-color: $sec;
     border-radius: 10px;
-    padding-left: 5px;
-    padding-right: 3px;
+    padding: 10px;
   }
   div:hover {
     border-color: $hl;

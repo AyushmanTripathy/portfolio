@@ -6,7 +6,6 @@
 
 <BackButton url="/" />
 <main>
-  <Home />
   <Journey />
   <div></div>
 </main>
