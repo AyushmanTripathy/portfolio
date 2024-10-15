@@ -44,16 +44,16 @@
   <h1>Get in touch!</h1>
   <section>
     <img src="/mail.svg" on:click="{copyMail}" alt="mail" />
-    <a href="https://www.youtube.com/@ayushmantripathy1917">
-      <img src="/youtube.svg" alt="youtube" />
+    <a target="_blank" href="https://www.codechef.com/users/ayushmantripat">
+      <img src="/codechef.svg" alt="codechef" />
     </a>
-    <a href="https://github.com/AyushmanTripathy/">
+    <a target="_blank" href="https://github.com/AyushmanTripathy/">
       <img src="/github.svg" alt="github" />
     </a>
-    <a href="https://www.linkedin.com/in/ayushman-tripathy">
+    <a target="_blank" href="https://www.linkedin.com/in/ayushman-tripathy">
       <img src="/linkedin.svg" alt="linkedin" />
     </a>
-    <a href="https://www.hackerrank.com/ayushmantripath3">
+    <a target="_blank" href="https://www.hackerrank.com/ayushmantripath3">
       <img src="/hackerrank.svg" alt="hackerrank" />
     </a>
   </section>
