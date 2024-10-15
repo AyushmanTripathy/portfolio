@@ -1,3 +1,11 @@
+| September 2024 |
+First Interview +
+Started JSDoc & Typescript +
+Worked on Logic Gates Sim
+
+| August 2024 |
+Started with Java
+
 | July 2024 |
 Lonavala trip
 
@@ -9,6 +17,9 @@ Worked on SuperTic
 | May 2024 |
 2nd sem results (9.6 sgpa) +
 Machine Learning and Cloud Computing Basics
+
+| April 2024 |
+Won Hacker Hour's CTF
 
 | March 2024 |
 1st Sem results (9.23 cgpa) +
@@ -32,7 +43,7 @@ Won 4 Awards at Avyakt 3.0 CSE Dept Fest.+
 Started doing CTF
 
 | September 2023 |
-Winner at Coding Competition, GIET +
+Won Coding Competition, GIET +
 participated in Smart India Hackathon
 
 | August 2023 | 
