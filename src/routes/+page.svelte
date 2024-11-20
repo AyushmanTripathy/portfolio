@@ -8,11 +8,9 @@
 
 <Home />
 <main>
-  <section></section>
   <About />
   <Projects />
   <Tech />
-  <Contact />
   <footer>
     <p>
       made with ❤ and svelte.js by @AyushmanTripathy <br />
@@ -34,10 +32,8 @@
     @include flex(column);
     z-index: $page-index;
     color: $light;
-  }
-  section {
-    @include fullscreen;
-    background-color: transparent;
+    padding-top: 100vh;
+    pointer-events: none;
   }
   footer {
     @include section(fit-content, 100vw);

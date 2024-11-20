@@ -40,6 +40,7 @@
     background-color: $pri;
     color: $light;
     z-index: $page-index;
+    pointer-events: auto;
   }
   .para {
     @include para;

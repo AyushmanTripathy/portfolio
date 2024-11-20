@@ -2,7 +2,7 @@ $pri: #202020;
 $sec: #303030;
 $tri: #404040;
 $hl: #047dffcb;
-$light: #bbb;
+$light: #fff;
 
 $pin-max-width: 450px;
 $mobile: 860px;
@@ -67,4 +67,12 @@ $page-bottom-padding: 5vh;
   width: 80vw;
   max-width: 800px;
   text-align: center;
+}
+@mixin contact-icon {
+  height: 35px;
+  width: 35px;
+  fill: $light;
+  &:hover {
+    fill: $hl;
+  }
 }
