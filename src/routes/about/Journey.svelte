@@ -1,50 +1,55 @@
 <script>
-  import { onMount } from "svelte";
-  import load from "$lib/loader.js"
+  import totalContent from "$lib/journey.json";
 
-  let months = [], notes = [];
-  onMount(async () => {
-    const arr = await load("journey.txt");
-    months = arr[0];
-    notes = arr[1];
-  })
+  let index = 5;
+  let content = totalContent.slice(0, index);
+  function showMore() {
+    index += 4;
+    if (index > totalContent.length) index = totalContent.length;
+    content = totalContent.slice(0, index);
+  }
   const isEven = (x) => x % 2 == 0;
 </script>
 
 <main>
-  <h1>My Journey</h1>
-  <p class="para">
-    I don't know where time will take me but i hope it's in the right
-  direction.</p>
+  <h1> What i have been up to? </h1>
   <section>
-    {#each notes as note,i}
+    {#each content as entry,i}
       <div class={isEven(i) ? "left" : "right"}>
-        <h2>{months[i]}</h2>
-        {#each note as line}
+        <h2>{entry.month}</h2>
+        {#each entry.notes as line}
           <p>{line}</p>
         {/each}
       </div>
     {/each}
   </section>
-  <p class="para">Thank you for reading my story.</p>
+  {#if index == totalContent.length}
+  <p class="para"> Sadly, i dont recall anything before that. </p>
+  {:else}
+  <p class="show-more para" on:click={showMore}> Show More </p>
+  {/if}
 </main>
 
 <style lang="scss">
-  @import "../../app.scss";
   main {
     @include section(fit-content,100vw);
     @include flex(column);
     @include flex-center;
     @include mono;
-    padding-top: 40vh;
     text-align:center;
+    background-color: $pri;
+    pointer-events: auto;
   }
   section {
     @include section(fit-content,fit-content);
-    background: linear-gradient($tri, $tri) no-repeat center/1px 80%;
+    background: linear-gradient($tri, $tri) no-repeat center/1px 90%;
   }
   .para {
     @include para;
+  }
+  .show-more {
+    color: $hl;
+    cursor: pointer;
   }
   div {
     @include section(fit-content,40vw);

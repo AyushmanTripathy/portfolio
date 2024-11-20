@@ -2,8 +2,8 @@
   import Home from "./_index/Home.svelte";
   import About from "./_index/About.svelte";
   import Projects from "./_index/Projects.svelte";
-  import Contact from "./_index/Contact.svelte";
   import Tech from "./_index/Tech.svelte";
+  import Journey from "./about/Journey.svelte";
 </script>
 
 <Home />
@@ -11,6 +11,7 @@
   <About />
   <Projects />
   <Tech />
+  <Journey />
   <footer>
     <p>
       made with ❤ and svelte.js by @AyushmanTripathy <br />
