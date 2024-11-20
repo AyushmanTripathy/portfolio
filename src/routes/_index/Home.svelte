@@ -12,8 +12,8 @@
     index = 0,
     done = false;
   const strings = [
-    "Hello Friend////////",
-    quotes[Math.floor(Math.random() * quotes.length)],
+    "Hello Friend///////",
+    quotes[Date.now() % quotes.length],
   ];
 
   function write(strs) {
