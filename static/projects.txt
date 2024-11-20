@@ -10,8 +10,8 @@ The useful html compiler, for when you don't need a javascript framework.
 | Omnicient |
 One who has answers to all your questions. (provided they are available on google.com)
 
-| Razite |
-A lightweight API client
+| logic_gates_simulation |
+To make stupid circuits to your heart's content!!
 
 | tik-tac-toe-ai |
 The unbeatable tik tac toe ai using minmax algorithim

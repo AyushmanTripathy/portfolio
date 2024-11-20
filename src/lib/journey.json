@@ -1,0 +1,126 @@
+[
+  {
+    "month": "October 2024",
+    "notes": ["reached 3⭐ at Codechef", "Became webdev co-lead in GDG"]
+  },
+  {
+    "month": "September 2024",
+    "notes": [
+      "First Interview",
+      "Started JSDoc & Typescript",
+      "Worked on Logic Gates Sim"
+    ]
+  },
+  { "month": "August 2024", "notes": ["Started with Java"] },
+  { "month": "July 2024", "notes": ["Lonavala trip"] },
+  {
+    "month": "June 2024",
+    "notes": [
+      "Got into Lua",
+      "Ported Neovim config to Lua",
+      "Worked on SuperTic"
+    ]
+  },
+  {
+    "month": "May 2024",
+    "notes": [
+      "2nd sem results (9.6 sgpa)",
+      "Machine Learning and Cloud Computing Basics"
+    ]
+  },
+  { "month": "April 2024", "notes": ["Won Hacker Hour's CTF"] },
+  {
+    "month": "March 2024",
+    "notes": [
+      "1st Sem results (9.23 cgpa)",
+      "reached 2⭐ at Codechef",
+      "Watched a lot of romcoms",
+      "Worked on GIETU Bus request"
+    ]
+  },
+  {
+    "month": "February 2024",
+    "notes": [
+      "Won 3 Awards at Shrujan 2.0",
+      "Started CodeChef and CodeForces",
+      "Worked on Sarah for IISc Bangalore Hackathon",
+      "Rank 51 at Coding Ninjas Weekly Contest 113"
+    ]
+  },
+  {
+    "month": "December 2023",
+    "notes": [
+      "TCS Codevita S11 (global) rank 759",
+      "Started Leetcode",
+      "Pune Trip"
+    ]
+  },
+  {
+    "month": "November 2023",
+    "notes": ["Won 4 Awards at Avyakt 3.0 CSE Dept Fest.", "Started doing CTF"]
+  },
+  {
+    "month": "September 2023",
+    "notes": [
+      "Won Coding Competition, GIET",
+      "participated in Smart India Hackathon"
+    ]
+  },
+  { "month": "August 2023", "notes": ["Joined GIETU, Gunupur"] },
+  {
+    "month": "June 2023",
+    "notes": [
+      "Started with Arch linux",
+      "Intro to algorithims on MIT OCW",
+      "Worked on omnicient"
+    ]
+  },
+  {
+    "month": "May 2023",
+    "notes": [
+      "My 12th result. (91%)",
+      "3th rank, class 12th, JNV Narla (batch 2022-23)",
+      "Worked on Pipescript"
+    ]
+  },
+  {
+    "month": "April 2023",
+    "notes": ["Puri, Bhubaneswar Vacation", "Got in C programming"]
+  },
+  {
+    "month": "March 2023",
+    "notes": ["Completed 12th Board", "Passed out from JNV Narla"]
+  },
+  { "month": "February 2023", "notes": ["12th Farewell Speech"] },
+  {
+    "month": "January 2023",
+    "notes": ["Did Cricket Commentray for ICL finals 2023"]
+  },
+  {
+    "month": "September 2022",
+    "notes": [
+      "Science Exibition, Kurud, Dhamteri.",
+      "Visited Raipur, Chhattisgarh."
+    ]
+  },
+  {
+    "month": "March 2022",
+    "notes": ["Started Competative Programming.", "Began Calisthenics."]
+  },
+  {
+    "month": "February 2022",
+    "notes": ["Introduced to Functional Programming."]
+  },
+  { "month": "August 2021", "notes": ["My 10th Result. (94.2%)"] },
+  {
+    "month": "April 2021",
+    "notes": ["First Linux Contact.", "Java & OO Programming."]
+  },
+  {
+    "month": "July 2016",
+    "notes": ["Joined Jawahar Navodaya Vidyalaya, Narla."]
+  },
+  { "month": "June 2016", "notes": ["Cracked JNV Entrance Test."] },
+  { "month": "October 2013", "notes": ["Got My First Computer."] },
+  { "month": "August 2004", "notes": ["Started Life."] }
+]

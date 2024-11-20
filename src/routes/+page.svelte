@@ -2,17 +2,14 @@
   import Home from "./_index/Home.svelte";
   import About from "./_index/About.svelte";
   import Projects from "./_index/Projects.svelte";
-  import Contact from "./_index/Contact.svelte";
   import Tech from "./_index/Tech.svelte";
+  import Journey from "./_index/Journey.svelte"
 </script>
 
 <Home />
 <main>
-  <section></section>
   <About />
-  <Projects />
-  <Tech />
-  <Contact />
+  <Journey />
   <footer>
     <p>
       made with ❤ and svelte.js by @AyushmanTripathy <br />
@@ -34,10 +31,8 @@
     @include flex(column);
     z-index: $page-index;
     color: $light;
-  }
-  section {
-    @include fullscreen;
-    background-color: transparent;
+    padding-top: 100vh;
+    pointer-events: none;
   }
   footer {
     @include section(fit-content, 100vw);
