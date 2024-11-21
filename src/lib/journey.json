@@ -21,18 +21,23 @@
       {
         "note": "Gave the 'Being Bored' Presentation",
         "link": "https://www.canva.com/design/DAGMOtED5Cg/13FhGgI8wBh4C6kLXf5mhQ/edit?utm_content=DAGMOtED5Cg"
-      }
+      },
+      "Started The Pragmatic Programmer"
     ]
   },
   { "month": "July 2024", "notes": ["Lonavala trip"] },
   {
     "month": "June 2024",
     "notes": [
-      "Got into Lua",
-      "Ported Neovim config to Lua",
       {
         "note": "Worked on SuperTic",
         "link": "https://supertic.netlify.app/"
+      },
+      "Got into Lua",
+      "Ported Neovim config to Lua",
+      {
+        "note": "Read Think like Git",
+        "link": "https://think-like-a-git.net/"
       }
     ]
   },
@@ -57,9 +62,19 @@
     "month": "February 2024",
     "notes": [
       "Won 3 Awards at Shrujan 2.0",
-      "Started CodeChef and CodeForces",
       "Worked on Sarah for IISc Bangalore Hackathon",
+      "Started Codeforces",
       "Rank 51 at Coding Ninjas Weekly Contest 113"
+    ]
+  },
+  {
+    "month": "January 2024",
+    "notes": [
+      "Started CodeChef",
+      {
+        "note": "Read cpu.land",
+        "link": "https://cpu.land/"
+      }
     ]
   },
   {
