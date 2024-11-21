@@ -1,5 +1,5 @@
 <script>
-  import quotes from "$lib/quotes.json";
+  import { getQuotes } from "$lib/utils.js";
   import Codechef from "$lib/svgs/Codechef.svelte";
   import Github from "$lib/svgs/Github.svelte";
   import Linkedin from "$lib/svgs/Linkedin.svelte";
@@ -13,7 +13,7 @@
     done = false;
   const strings = [
     "Hello Friend///////",
-    quotes[Date.now() % quotes.length],
+    ...getQuotes(),
   ];
 
   function write(strs) {
@@ -54,19 +54,19 @@
     <span></span>
   </p>
   <section>
-    <a href="mailto:ayushmantripathy2004@gmail.com">
+    <a aria-label="Mail" href="mailto:ayushmantripathy2004@gmail.com">
       <Mail />
     </a>
-    <a target="_blank" href="https://www.codechef.com/users/ayushmantripat">
+    <a aria-label="Codechef" target="_blank" href="https://www.codechef.com/users/ayushmantripat">
       <Codechef />
     </a>
-    <a target="_blank" href="https://github.com/AyushmanTripathy/">
+    <a aria-label="Github" target="_blank" href="https://github.com/AyushmanTripathy/">
       <Github />
     </a>
-    <a target="_blank" href="https://www.linkedin.com/in/ayushman-tripathy">
+    <a aria-label="Linkedin" target="_blank" href="https://www.linkedin.com/in/ayushman-tripathy">
       <Linkedin />
     </a>
-    <a target="_blank" href="https://www.hackerrank.com/ayushmantripath3">
+    <a aria-label="Hackerrank" target="_blank" href="https://www.hackerrank.com/ayushmantripath3">
       <Hackerrank />
     </a>
   </section>
@@ -103,6 +103,11 @@
     max-width: 200px;
     width: 40vw;
     border-radius: 10px;
+  }
+  h1 {
+    text-shadow: 3px 5px $tri;
+    font-size: xxx-large;
+    text-align: center;
   }
   p {
     max-width: 90vw;

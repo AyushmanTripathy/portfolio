@@ -1,5 +1,6 @@
 <script>
   import totalContent from "$lib/journey.json";
+  import Link from "../../lib/svgs/Link.svelte";
 
   let index = 5;
   let content = totalContent.slice(0, index);
@@ -18,7 +19,16 @@
       <div class={isEven(i) ? "left" : "right"}>
         <h2>{entry.month}</h2>
         {#each entry.notes as line}
+          {#if typeof line == "string"}
           <p>{line}</p>
+          {:else}
+          <p>
+            {line.note}
+            <a target="_blank" href="{line.link}">
+              <Link />
+            </a>
+          </p>
+          {/if}
         {/each}
       </div>
     {/each}
@@ -26,7 +36,7 @@
   {#if index == totalContent.length}
   <p class="para"> Sadly, i dont recall anything before that. </p>
   {:else}
-  <p class="show-more para" on:click={showMore}> Show More </p>
+  <p class="show-more para" on:mousedown={showMore}> Show More </p>
   {/if}
 </main>
 
@@ -64,7 +74,7 @@
     text-align: right;
     right: $diff;
   }
-  @media only screen and (max-width: 450px) {
+  @media only screen and (max-width: 700px) {
     section {
       background: none;
     }
