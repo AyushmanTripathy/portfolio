@@ -6,19 +6,34 @@
   {
     "month": "September 2024",
     "notes": [
-      "First Interview",
-      "Started JSDoc & Typescript",
-      "Worked on Logic Gates Sim"
+      "First Interview & Rejection",
+      "Started with JSDoc & Typescript",
+      {
+        "note": "Worked on Logic Gates Sim",
+        "link": "https://gatessim.netlify.app/"
+      }
     ]
   },
-  { "month": "August 2024", "notes": ["Started with Java"] },
+  {
+    "month": "August 2024",
+    "notes": [
+      "Started with Java",
+      {
+        "note": "Gave the 'Being Bored' Presentation",
+        "link": "https://www.canva.com/design/DAGMOtED5Cg/13FhGgI8wBh4C6kLXf5mhQ/edit?utm_content=DAGMOtED5Cg"
+      }
+    ]
+  },
   { "month": "July 2024", "notes": ["Lonavala trip"] },
   {
     "month": "June 2024",
     "notes": [
       "Got into Lua",
       "Ported Neovim config to Lua",
-      "Worked on SuperTic"
+      {
+        "note": "Worked on SuperTic",
+        "link": "https://supertic.netlify.app/"
+      }
     ]
   },
   {
@@ -51,13 +66,22 @@
     "month": "December 2023",
     "notes": [
       "TCS Codevita S11 (global) rank 759",
-      "Started Leetcode",
+      {
+        "note": "Started Leetcode",
+        "link": "https://leetcode.com/u/ayushmantripathy2004/"
+      },
       "Pune Trip"
     ]
   },
   {
     "month": "November 2023",
-    "notes": ["Won 4 Awards at Avyakt 3.0 CSE Dept Fest.", "Started doing CTF"]
+    "notes": [
+      {
+        "note": "Won 4 Awards at Avyakt 3.0 CSE Dept Fest.",
+        "link": "https://www.linkedin.com/feed/update/urn:li:activity:7133768304300605440/"
+      },
+      "Started doing CTF"
+    ]
   },
   {
     "month": "September 2023",
@@ -72,7 +96,10 @@
     "notes": [
       "Started with Arch linux",
       "Intro to algorithims on MIT OCW",
-      "Worked on omnicient"
+      {
+        "note": "Worked on omnicient",
+        "link": "https://github.com/ayushmantripathy/omnicient"
+      }
     ]
   },
   {
@@ -80,7 +107,10 @@
     "notes": [
       "My 12th result. (91%)",
       "3th rank, class 12th, JNV Narla (batch 2022-23)",
-      "Worked on Pipescript"
+      {
+        "note": "Worked on Pipescript",
+        "link": "https://github.com/ayushmantripathy/pips"
+      }
     ]
   },
   {
