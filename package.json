@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "rm -rf .svelte-kit && vite dev",
-    "build": "vite build",
+    "compileBlog": "sh ./compile_blog.sh",
+    "build": "npm run compileBlog && vite build",
     "preview": "vite preview"
   },
   "devDependencies": {

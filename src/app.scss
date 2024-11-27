@@ -3,6 +3,7 @@ $sec: #303030;
 $tri: #404040;
 $hl: #047dffcb;
 $light: #fff;
+$dim: #aaa;
 
 $pin-max-width: 450px;
 $mobile: 860px;
@@ -10,6 +11,13 @@ $mobile: 860px;
 $page-index: 2;
 $page-bottom-padding: 5vh;
 
+@mixin glass {
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(32, 32, 32, 0.3);
+}
 @mixin shadow {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
 }

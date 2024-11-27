@@ -1,15 +1,8 @@
 <script>
   import { onMount } from "svelte";
-  let pointer, scrollFactor;
-  let loadingComplete = false;
+  let scrollFactor;
   onMount(() => {
-    loadingComplete = document.readyState == "complete"
-    document.addEventListener("readystatechange", () => {
-      if (document.readyState === "complete") {
-        loadingComplete = true;
-      }
-    });
-
+    /*
     document.onmousemove = ({ clientX, clientY }) => {
       const center_x = pointer.offsetLeft + pointer.width / 2;
       const center_y = pointer.offsetTop + pointer.height / 2;
@@ -20,6 +13,7 @@
       pointer.style["-o-transform"] = "rotate(" + degree + "deg)";
       pointer.style["-ms-transform"] = "rotate(" + degree + "deg)";
     };
+    */
     document.onscroll = () => {
       scrollFactor =
         document.documentElement.scrollTop /
@@ -28,31 +22,43 @@
   });
 </script>
 
+<main>
+  <img id="pointer" src="/pointer.svg" alt="pointer" />
+  <section>
+    <a href="/"> Home </a>
+    <a href="/blog"> Blogs </a>
+  </section>
+</main>
 <div style="width:{scrollFactor * 100}vw;"></div>
-<img id="pointer" bind:this="{pointer}" src="/pointer.svg" alt="pointer" />
 <slot></slot>
 
 <style lang="scss">
-  section {
+  main {
+    @include flex(row);
     @include fixed(0, 0);
-    @include fullscreen;
-    background-color: $pri;
+    @include glass;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    height: 5vh;
     color: $light;
     z-index: 100;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  a {
+    @include mono;
+    color: $light;
+    padding-left: 30px;
   }
   div {
     @include fixed(0, 0);
     @include section(3px, 0);
     background-color: $hl;
     transition: width 500ms;
-    z-index: 10;
+    z-index: 1000;
   }
   #pointer {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 10;
     transform: rotate(-90deg);
-    transition: 180ms;
   }
 </style>
