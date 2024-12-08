@@ -1,5 +1,18 @@
 [
   {
+    "month": "December 2024",
+    "notes": [
+      {
+        "note": "Worked PDFDark",
+        "link": "https://github.com/AyushmanTripathy/pdfdark"
+      }
+    ]
+  },
+  {
+    "month": "November 2024",
+    "notes": ["Added blogs to this website"]
+  },
+  {
     "month": "October 2024",
     "notes": ["reached 3⭐ at Codechef", "Became webdev co-lead in GDG"]
   },
@@ -16,14 +29,7 @@
   },
   {
     "month": "August 2024",
-    "notes": [
-      "Started with Java",
-      {
-        "note": "Gave the 'Being Bored' Presentation",
-        "link": "https://www.canva.com/design/DAGMOtED5Cg/13FhGgI8wBh4C6kLXf5mhQ/edit?utm_content=DAGMOtED5Cg"
-      },
-      "Started The Pragmatic Programmer"
-    ]
+    "notes": ["Started The Pragmatic Programmer"]
   },
   { "month": "July 2024", "notes": ["Lonavala trip"] },
   {
@@ -44,6 +50,7 @@
   {
     "month": "May 2024",
     "notes": [
+      "Learned React",
       "2nd sem results (9.6 sgpa)",
       "Machine Learning and Cloud Computing Basics"
     ]
