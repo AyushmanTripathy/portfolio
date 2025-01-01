@@ -3,14 +3,22 @@
     "month": "December 2024",
     "notes": [
       {
-        "note": "Worked PDFDark",
+        "note": "Made GDG's Website",
+        "link": "https://gdgocgietu.vercel.app/"
+      },
+      {
+        "note": "Worked on PDFDark",
         "link": "https://github.com/AyushmanTripathy/pdfdark"
-      }
+      },
+      "Won 5 Awards at Shrujan 3.0"
     ]
   },
   {
     "month": "November 2024",
-    "notes": ["Added blogs to this website"]
+    "notes": [
+      "Was part of the Shrujan 3.0 Tech Team",
+      "Added blogs to this website"
+    ]
   },
   {
     "month": "October 2024",
