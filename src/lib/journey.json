@@ -1,5 +1,13 @@
 [
   {
+    "month": "January 2025",
+    "notes": [
+      "Worked on Avyakt 4.0, Which got cancelled",
+      "Started Computer Networks",
+      "Began the schedule"
+    ]
+  },
+  {
     "month": "December 2024",
     "notes": [
       {
@@ -37,7 +45,10 @@
   },
   {
     "month": "August 2024",
-    "notes": ["Started The Pragmatic Programmer"]
+    "notes": [
+      "Started The Pragmatic Programmer",
+      "Being a Mr. Fresher Finalist"
+    ]
   },
   { "month": "July 2024", "notes": ["Lonavala trip"] },
   {

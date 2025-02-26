@@ -16,6 +16,7 @@
     I use <strong>Arch</strong> btw! checkout my
     <a href="https://github.com/AyushmanTripathy/dots"> dotfiles</a>.
   </p>
+  <p> If you want to share a secret, here is my <a href="/public.txt">public key</a> </p>
 
   <a href="/links">Other good corners of the internet</a>
 </main>
