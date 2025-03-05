@@ -1,5 +1,16 @@
 [
   {
+    "month": "February 2025",
+    "notes": [
+      "Read The Stranger, Metamorphosis and Atomic Habits",
+      {
+        "note": "Learned Assembley, built tic_in_asm",
+        "link": "https://github.com/AyushmanTripathy/tic_in_asm"
+      },
+      "Built Badgify, nash, Literary Society's website"
+    ]
+  },
+  {
     "month": "January 2025",
     "notes": [
       "Worked on Avyakt 4.0, Which got cancelled",
