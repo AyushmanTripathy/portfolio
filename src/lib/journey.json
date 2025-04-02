@@ -1,5 +1,16 @@
 [
   {
+    "month": "March 2025",
+    "notes": [
+      "Worked with Svelte Runes, Tailwind CSS",
+      {
+        "note": "Started working at Litekart",
+        "link": "https://litekart.in/"
+      },
+      "Joined Office Bearers"
+    ]
+  },
+  {
     "month": "February 2025",
     "notes": [
       "Read The Stranger, Metamorphosis and Atomic Habits",
