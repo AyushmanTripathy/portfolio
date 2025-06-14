@@ -2,8 +2,7 @@
   <h1>Hello there! 👋</h1>
   <p class="para">
     I am a {new Date().getYear() - 104} year old full stack web developer and
-    Linux enthusiast. I do competative programming for fun. currently Sophomore
-    at GIETU, Gunupur.
+    Linux enthusiast. I do competative programming for fun.
   </p>
   <p class="para">
     I love computers, FOSS, Linux, good humour, history, chicken and my
