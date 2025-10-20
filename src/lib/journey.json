@@ -1,5 +1,49 @@
 [
   {
+    "month": "October 2025",
+    "notes": ["First blazor & redcheif shoes", "Shifted to new home"],
+    "movies": [
+      "Perfect Days",
+      "The Longest Ride",
+      "Before Sunrise",
+      "Inglourious Basterds"
+    ]
+  },
+  {
+    "month": "September 2025",
+    "notes": [
+      "Loving my first Thinkpad (E14)",
+      "Worked on Avyakt 4.0",
+      "Short uploader script for mom"
+    ],
+    "movies": [
+      "Purple Hears",
+      "Get Smart",
+      "Warrior",
+      "Silver Linings Playbook",
+      "No Strings Attached"
+    ]
+  },
+  {
+    "month": "August 2025",
+    "notes": [
+      "microphone toggle, volume switch, encrypted diary many more scripts."
+    ],
+    "movies": ["Eternal Sunshine of the Spotless Mind"]
+  },
+  {
+    "month": "July 2025",
+    "notes": [
+      "Negotiated salary 9LPA",
+      "Registrar crushed thoose dreams",
+      "Created Memes Tinder"
+    ]
+  },
+  {
+    "month": "June 2025",
+    "notes": ["Grandma Died"]
+  },
+  {
     "month": "May 2025",
     "notes": [
       "First Salary, Rs 10,833",
@@ -8,9 +52,7 @@
   },
   {
     "month": "Apri 2025",
-    "notes": [
-      "2021-2025 batch farewell"
-    ]
+    "notes": ["2021-2025 batch farewell"]
   },
   {
     "month": "March 2025",
