@@ -1,12 +1,25 @@
 [
   {
+    "month": "November 2025",
+    "notes": [
+      "Shrujan Dev Work",
+      "First VPS & DNS use."
+    ],
+    "movies": [
+      "The Longest Ride",
+      "Redeeming Love",
+      "Absolutely Anything",
+      "Paatal Lok"
+    ]
+  },
+  {
     "month": "October 2025",
-    "notes": ["First blazor & redcheif shoes", "Shifted to new home"],
+    "notes": ["Fashion show in Avyakt 4.0", "First blazor & redcheif shoes", "Shifted to new home"],
     "movies": [
       "Perfect Days",
-      "The Longest Ride",
       "Before Sunrise",
-      "Inglourious Basterds"
+      "Inglourious Basterds",
+      "Once upon a time in hollywood"
     ]
   },
   {
