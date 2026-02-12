@@ -1,0 +1,56 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-pri: #181A1B;
+  --color-sec: #bbb;
+  --color-tri: #047dffcb;
+  --color-mint-500: oklch(0.72 0.11 178)
+}
+
+body {
+}
+
+h1,
+h2,
+h3,
+button,
+strong,
+li,
+p {
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+p {
+  font-weight: 300;
+}
+
+strong {
+  font-weight: 700;
+}
+
+a {
+  @apply text-tri font-bold cursor-pointer
+}
+
+button {
+  @apply cursor-pointer text-tri font-bold
+}
+
+.blog h2 {
+  font-weight: 700;
+  @apply uppercase pt-3;
+}
+
+.blog p {
+  @apply pl-10 text-justify;
+}
+
+.blog pre {
+  @apply py-5 pl-20;
+}

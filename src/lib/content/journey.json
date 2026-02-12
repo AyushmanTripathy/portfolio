@@ -1,20 +1,51 @@
 [
   {
-    "month": "November 2025",
+    "month": "December 2025",
     "notes": [
-      "Shrujan Dev Work",
-      "First VPS & DNS use."
+      "Shrujan Fest",
+      "Started Cycling",
+      "Read The Psychology of Money"
     ],
+    "movies": [
+      "Shutter Island",
+      "Split",
+      "Unbreakable",
+      "Glass",
+      "The Butterfly Effect",
+      "Family Man S3",
+      "The Vow",
+      "Before We Go",
+      "The Man from UNCLE",
+      "The Substance",
+      "The Witch",
+      "Legally Blonde",
+      "Paul",
+      "Tag",
+      "Wedding Crashers",
+      "Old school",
+      "Anyone but you",
+      "Together"
+    ]
+  },
+  {
+    "month": "November 2025",
+    "notes": ["Shrujan Dev Work", "First VPS & DNS use."],
     "movies": [
       "The Longest Ride",
       "Redeeming Love",
       "Absolutely Anything",
-      "Paatal Lok"
+      "Paatal Lok",
+      "Matrix 1",
+      "Django Unchained"
     ]
   },
   {
     "month": "October 2025",
-    "notes": ["Fashion show in Avyakt 4.0", "First blazor & redcheif shoes", "Shifted to new home"],
+    "notes": [
+      "Fashion show in Avyakt 4.0",
+      "First blazor & redcheif shoes",
+      "Shifted to new home"
+    ],
     "movies": [
       "Perfect Days",
       "Before Sunrise",
@@ -95,7 +126,8 @@
       "Worked on Avyakt 4.0, Which got cancelled",
       "Started Computer Networks",
       "Began the schedule"
-    ]
+    ],
+    "movies": ["Harold & Kumar"]
   },
   {
     "month": "December 2024",

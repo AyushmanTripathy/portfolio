@@ -1,0 +1,65 @@
+{
+  "Articles": {
+    "Putting the 'You' in CPU": "https://cpu.land/",
+    "Introduction To Linux": "https://linux.die.net/Intro-Linux/",
+    "GNU C Manual": "https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.pdf",
+    "Think Like GIT": "https://think-like-a-git.net/",
+    "react.dev/learn": "https://react.dev/learn/describing-the-ui",
+    "svelte docs": "https://svelte.dev/docs/svelte/overview"
+  },
+  "Books": {
+    "The Stranger - Albert Camus": "https://www.google.com/search?q=filetype%3Apdf+The+stranger",
+    "The Pragmatic Programmer": "https://www.google.com/search?q=filetype%3Apdf+Pragmatic+programmer",
+    "Men are from mars, Women are from venus": "https://www.google.com/search?q=filetype%3Apdf+Men+are+from+mars%2C+Women+are+from+venus",
+    "The Psychology of Money": "https://www.google.com/search?q=filetype%3Apdf+Pschyology+of+money"
+  },
+  "Youtube Playlists": {
+    "The Website Is Down": "https://www.youtube.com/watch?v=uRGljemfwUE&list=PLQ9a1SEqrohLZ1-lGYtX-uvHUQDKGTyo1",
+    "Wayne": "https://www.youtube.com/watch?v=p84O3JAp_IM&list=PLVDu1DriBTOas7QlcVT7C1UaKyo5fQgiH",
+    "Random bullshittery": "https://www.youtube.com/watch?v=LIE1tFVpjBA&list=PLBitIgZ_UvGFpaXZVX-Dwf9sMC65xqLfM",
+    "He Will Not Divide Us": "https://www.youtube.com/watch?v=_p4h3jwJob0&list=PL8tinph7klVU66Hq6ubhKGD39kPBLJ2FP",
+    "r/Wallstreetbets": "https://www.youtube.com/watch?v=DlKBSvQfM1c&list=PLDz0e2htWCcSybDJZC1_-2_2Q56CVONVX"
+  },
+  "Youtubers": {
+    "Standup Comedians": {
+      "Kenny Sebastian": "https://www.youtube.com/@KennySebastian",
+      "Manik Mahna": "https://www.youtube.com/@manikmahna",
+      "The Aadar Guy": "https://www.youtube.com/@Aadar",
+      "Kanan Gill": "https://www.youtube.com/@kanan_gill",
+      "Zakir Khan": "https://www.youtube.com/@ZakirKhan"
+    },
+    "Computer people (serious)": {
+      "Hussein Nasser": "https://www.youtube.com/@hnasr",
+      "Computerphile": "https://www.youtube.com/user/Computerphile",
+      "Fireship": "https://www.youtube.com/c/Fireship+",
+      "Daedalus Community": "https://www.youtube.com/@DaedalusCommunity ",
+      "Sebastian Lague": "https://www.youtube.com/c/SebastianLague",
+      "VoxelRifts": "https://www.youtube.com/@voxelrifts",
+      "jdh": "https://www.youtube.com/@jdh",
+      "Francisco Jinto Fox": "https://www.youtube.com/@FranciscoFox",
+      "Studying With Alex": "https://www.youtube.com/@StudyingWithAlex",
+      "Brian Will": "https://www.youtube.com/@briantwill",
+      "BugsWriter": "https://www.youtube.com/@bugswriter_"
+    },
+    "Computer people (not so serious)": {
+      "Junferno": "https://www.youtube.com/@Junferno",
+      "Kevin Fang": "https://www.youtube.com/@kevinfaang",
+      "Ionic1k": "https://www.youtube.com/@Ionic1k",
+      "jvscholz": "https://www.youtube.com/@jvscholz"
+    },
+    "Non computer people (serious)": {
+      "Kraut": "https://www.youtube.com/c/KrautandTea",
+      "Kroordarshan": "https://www.youtube.com/@kroordarshan"
+    },
+    "Non computer people (not so serious)": {
+      "SovietWomble": "https://www.youtube.com/@SovietWomble",
+      "Internet Historian": "https://www.youtube.com/@InternetHistorian",
+      "Casually Explained": "https://www.youtube.com/@CasuallyExplained",
+      "OverSimplified": "https://www.youtube.com/@OverSimplified",
+      "SsethTzeentach": "https://www.youtube.com/@SsethTzeentach",
+      "All India Bakchod": "https://www.youtube.com/@allindiabakchod",
+      "Big Boss": "https://www.youtube.com/@bigbosstube",
+      "bill wurtz": "https://www.youtube.com/@billwurtz"
+    }
+  }
+}

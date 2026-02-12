@@ -1,56 +1,57 @@
-<script>
-  import BackButton from "../_common/backbutton.svelte";
-  import load from "$lib/loader.js";
-  import { onMount } from "svelte";
+<script lang="ts">
+  import ShowMore from "$lib/components/ui/show-more.svelte";
+  import links from "$lib/content/links.json";
 
-  let headings = [], names = [], links = [];
-  onMount(async () => {
-    const arr = await load("links.txt");
-    const tmpNames = [], tmpLinks = [];
-    for (let i = 0; i < arr[0].length; i++) {
-      tmpNames[i] = [];
-      tmpLinks[i] = [];
-      for (let x = 0; x < arr[1][i].length; x += 2) {
-        tmpNames[i].push(arr[1][i][x + 1]);
-        tmpLinks[i].push(arr[1][i][x]);
-      }
-    }
-    headings = arr[0];
-    names = tmpNames;
-    links = tmpLinks;
-  })
+  type Node = {
+    [key: string]: string | Node;
+  };
+
+  const isArrayNode = (x: any) => {
+    const y = Object.values(x)[0]
+    if (!y) return false
+    return (typeof y) == "string"
+  }
 </script>
 
-<BackButton url="/"/>
-<main>
-  <h1>My Links</h1>
-  <p>Explore some good corners of internet.</p>
+{#snippet indent(level: number)}
+  {@html "&nbsp;".repeat(level)}
+{/snippet}
 
-  {#each headings as heading,i}
-    <p><strong>{heading}</strong></p>
-    {#each links[i] as link,x}
-      <a href="{link}">{names[i][x]}</a>
-    {/each}
+{#snippet LinkNode(node: Node, level: number)}
+  {@const keys = Object.keys(node)}
+
+  {#each keys as key, idx}
+    {@const val = node[key]}
+    {#if typeof val == "string"}
+      {@render indent(level + 1)}
+      <a target="_blank" href={val}> "{key}" </a>,
+      <br />
+    {:else if typeof val == "object"}
+      {@const bracket = isArrayNode(val) ? "[]" : "{}"}
+      {@render indent(level)}
+      <span> "{key}": {bracket[0]} </span>
+      <br />
+      {@render LinkNode(val, level + 1)}
+      {@render indent(level)}
+
+      <span>
+        {bracket[1] + (idx + 1 == keys.length ? "" : ",")}
+      </span>
+      <br />
+    {/if}
   {/each}
-</main>
+{/snippet}
 
-<style lang="scss">
-  main {
-    @include section(fit-content,100vw);
-    @include absolute;
-    @include flex(column);
-    @include flex-center;
-    @include mono;
-
-    min-height: calc(100vh - $page-bottom-padding);
-    background-color: $pri;
-    color: $light;
-    padding-bottom: $page-bottom-padding;
-  }
-  h1 {
-    border-bottom: 1px solid $hl;
-  }
-  p {
-    @include para;
-  }
-</style>
+<article class="w-full">
+  <h2 class="font-bold">&gt; cd links &amp;&amp; cat README.txt links.json</h2>
+  <section class="flex flex-col gap-3">
+    <p class="text-justify">Some other good corners of the internet.</p>
+    <p>
+      &lbrace;
+      <br />
+      {@render LinkNode(links, 1)}
+      &rbrace;
+    </p>
+  </section>
+  <ShowMore hasNoMore={true}></ShowMore>
+</article>
