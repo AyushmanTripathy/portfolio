@@ -54,3 +54,9 @@ button {
 .blog pre {
   @apply py-5 pl-20;
 }
+
+pre {
+  overflow-x: scroll;
+  scrollbar-width: none;
+  max-width: 95vw;
+}
