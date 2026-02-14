@@ -20,6 +20,7 @@
     <ul class="grid grid-cols-4">
       {@render link("home", "/")}
       {@render link("links", "/links")}
+      {@render link("movies", "/movies")}
       {@render link("blogs", "/blogs")}
     </ul>
   </section>

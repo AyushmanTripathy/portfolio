@@ -4,7 +4,7 @@
 
   type Month = (typeof months)[number];
 
-  let noOfMonthsExpanded = $state(2);
+  let noOfMonthsExpanded = $state(4);
   const monthWithMovies = $derived(months.filter((x) => x.movies?.length));
   const expandedMonths = $derived(monthWithMovies.slice(0, noOfMonthsExpanded));
   const aggregateIntoYears = $derived.by(() => {
