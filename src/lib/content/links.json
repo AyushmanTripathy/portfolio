@@ -2,16 +2,22 @@
   "Articles": {
     "Putting the 'You' in CPU": "https://cpu.land/",
     "Introduction To Linux": "https://linux.die.net/Intro-Linux/",
-    "GNU C Manual": "https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.pdf",
     "Think Like GIT": "https://think-like-a-git.net/",
     "react.dev/learn": "https://react.dev/learn/describing-the-ui",
     "svelte docs": "https://svelte.dev/docs/svelte/overview"
   },
   "Books": {
-    "The Stranger - Albert Camus": "https://www.google.com/search?q=filetype%3Apdf+The+stranger",
-    "The Pragmatic Programmer": "https://www.google.com/search?q=filetype%3Apdf+Pragmatic+programmer",
-    "Men are from mars, Women are from venus": "https://www.google.com/search?q=filetype%3Apdf+Men+are+from+mars%2C+Women+are+from+venus",
-    "The Psychology of Money": "https://www.google.com/search?q=filetype%3Apdf+Pschyology+of+money"
+    "Non computers": {
+      "The Stranger - Albert Camus": "https://www.google.com/search?q=filetype%3Apdf+The+stranger",
+      "Men are from mars, Women are from venus": "https://www.google.com/search?q=filetype%3Apdf+Men+are+from+mars%2C+Women+are+from+venus",
+      "The Psychology of Money": "https://www.google.com/search?q=filetype%3Apdf+Pschyology+of+money"
+    },
+    "Computers": {
+      "GNU C Manual": "https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.pdf",
+      "The Pragmatic Programmer": "https://www.google.com/search?q=filetype%3Apdf+Pragmatic+programmer",
+      "Linux Kernel Development": "https://www.google.com/search?q=filetype%3Apdf+Linux+Kernel+Development",
+      "Cracking the coding interview": "https://www.google.com/search?q=filetype%3Apdf+Cracking+the+coding+interview"
+    }
   },
   "Youtube Playlists": {
     "The Website Is Down": "https://www.youtube.com/watch?v=uRGljemfwUE&list=PLQ9a1SEqrohLZ1-lGYtX-uvHUQDKGTyo1",
@@ -55,7 +61,7 @@
       "SovietWomble": "https://www.youtube.com/@SovietWomble",
       "Internet Historian": "https://www.youtube.com/@InternetHistorian",
       "Casually Explained": "https://www.youtube.com/@CasuallyExplained",
-      "Good work - Dan Toomey":"https://www.youtube.com/@GoodWorkMB",
+      "Good work - Dan Toomey": "https://www.youtube.com/@GoodWorkMB",
       "OverSimplified": "https://www.youtube.com/@OverSimplified",
       "SsethTzeentach": "https://www.youtube.com/@SsethTzeentach",
       "All India Bakchod": "https://www.youtube.com/@allindiabakchod",
