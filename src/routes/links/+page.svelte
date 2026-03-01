@@ -7,14 +7,15 @@
   };
 
   const isArrayNode = (x: any) => {
-    const y = Object.values(x)[0]
-    if (!y) return false
-    return (typeof y) == "string"
-  }
+    const y = Object.values(x)[0];
+    if (!y) return false;
+    return typeof y == "string";
+  };
 </script>
 
 {#snippet indent(level: number)}
-  {@html "&nbsp;".repeat(level)}
+  {@const _ = console.log(level * 2)}
+  <span>{@html "&nbsp;".repeat(level * 2)}</span>
 {/snippet}
 
 {#snippet LinkNode(node: Node, level: number)}
@@ -23,19 +24,18 @@
   {#each keys as key, idx}
     {@const val = node[key]}
     {#if typeof val == "string"}
-      {@render indent(level + 1)}
-      <a target="_blank" href={val}> "{key}" </a>,
+      <span>
+        {@render indent(level)}<a target="_blank" href={val}>"{key}"</a>,
+      </span>
       <br />
     {:else if typeof val == "object"}
       {@const bracket = isArrayNode(val) ? "[]" : "{}"}
-      {@render indent(level)}
-      <span> "{key}": {bracket[0]} </span>
+      <span> {@render indent(level)}"{key}": {bracket[0]} </span>
       <br />
       {@render LinkNode(val, level + 1)}
-      {@render indent(level)}
 
       <span>
-        {bracket[1] + (idx + 1 == keys.length ? "" : ",")}
+        {@render indent(level)}{bracket[1] + (idx + 1 == keys.length ? "" : ",")}
       </span>
       <br />
     {/if}
