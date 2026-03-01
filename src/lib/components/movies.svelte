@@ -30,7 +30,7 @@
 <article class="w-full">
   <h2 class="font-bold">&gt; more movies.yml | head -{expandedLineCount}</h2>
   <section class="months w-full">
-    {#each Object.keys(aggregateIntoYears) as year}
+    {#each Object.keys(aggregateIntoYears).sort().reverse() as year}
       <p>{year}:</p>
       {#each aggregateIntoYears[year] as month}
         <p>
