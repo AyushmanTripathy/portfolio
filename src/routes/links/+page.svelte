@@ -6,52 +6,161 @@
     [key: string]: string | Node;
   };
 
-  const isArrayNode = (x: any) => {
-    const y = Object.values(x)[0];
-    if (!y) return false;
-    return typeof y == "string";
-  };
+  let expandedSections = $state<Record<string, boolean>>({});
+
+  function toggleSection(key: string) {
+    expandedSections = { ...expandedSections, [key]: !expandedSections[key] };
+  }
 </script>
 
-{#snippet indent(level: number)}
-  {@const _ = console.log(level * 2)}
-  <span>{@html "&nbsp;".repeat(level * 2)}</span>
-{/snippet}
-
-{#snippet LinkNode(node: Node, level: number)}
-  {@const keys = Object.keys(node)}
-
-  {#each keys as key, idx}
-    {@const val = node[key]}
-    {#if typeof val == "string"}
-      <span>
-        {@render indent(level)}<a target="_blank" href={val}>"{key}"</a>,
-      </span>
-      <br />
-    {:else if typeof val == "object"}
-      {@const bracket = isArrayNode(val) ? "[]" : "{}"}
-      <span> {@render indent(level)}"{key}": {bracket[0]} </span>
-      <br />
-      {@render LinkNode(val, level + 1)}
-
-      <span>
-        {@render indent(level)}{bracket[1] + (idx + 1 == keys.length ? "" : ",")}
-      </span>
-      <br />
-    {/if}
-  {/each}
-{/snippet}
-
 <article class="w-full">
-  <h2 class="font-bold">&gt; cd links &amp;&amp; cat README.txt links.json</h2>
-  <section class="flex flex-col gap-3">
-    <p class="text-justify">Some other good corners of the internet.</p>
-    <p>
-      &lbrace;
-      <br />
-      {@render LinkNode(links, 1)}
-      &rbrace;
-    </p>
+  <h2 class="font-bold terminal-cmd">&gt; cat ~/.links.json</h2>
+  <section class="links-container">
+    <p class="comment"># Useful links I've collected over time</p>
+    <p class="bracket">{'{'}</p>
+    
+    {#each Object.entries(links) as [category, content], categoryIdx}
+      {@const isExpanded = expandedSections[category] !== false}
+      {@const contentObj = typeof content === 'object' ? content : {}}
+      {@const keys = Object.keys(contentObj)}
+      {@const totalCount = keys.length}
+      {@const collapsedCount = Math.min(3, totalCount)}
+      
+      <div class="category-block">
+        <button 
+          class="category-toggle" 
+          onclick={() => toggleSection(category)}
+        >
+          <span class="key">"{category}"</span><span class="colon">:</span> <span class="bracket">{'{'}</span>
+          {#if !isExpanded}
+            <span class="collapsed-hint">// {collapsedCount} of {totalCount}</span>
+            <span class="bracket">{'}'}{categoryIdx < Object.keys(links).length - 1 ? ',' : ''}</span>
+          {/if}
+        </button>
+        
+        {#if isExpanded}
+          <div class="category-content">
+            {#each Object.entries(contentObj) as [key, val], idx}
+              {@const isLast = idx === Object.keys(contentObj).length - 1}
+              
+              {#if typeof val == "string"}
+                <p class="link-item">
+                  <span class="indent-1"></span>
+                  <span class="key">"{key}"</span><span class="colon">:</span> <span class="link-value">[hidden]</span>{isLast ? '' : ','}
+                </p>
+              {:else if typeof val == "object" && val !== null}
+                {@const subKeys = Object.keys(val)}
+                <div class="nested-block">
+                  <p>
+                    <span class="indent-1"></span>
+                    <span class="key">"{key}"</span><span class="colon">:</span> <span class="bracket">{'{'}</span>
+                  </p>
+                  {#each Object.entries(val as Node) as [subKey, subVal], subIdx}
+                    {@const isSubLast = subIdx === subKeys.length - 1}
+                    <p class="link-item">
+                      <span class="indent-2"></span>
+                      <span class="key">"{subKey}"</span><span class="colon">:</span> <span class="link-value">[hidden]</span>{isSubLast ? '' : ','}
+                    </p>
+                  {/each}
+                  <p><span class="indent-1"></span><span class="bracket">{'}'}{isLast ? ',' : ''}</span></p>
+                </div>
+              {/if}
+            {/each}
+          </div>
+          <p><span class="bracket">{'}'}{categoryIdx < Object.keys(links).length - 1 ? ',' : ''}</span></p>
+        {/if}
+      </div>
+    {/each}
+    <p class="bracket">{'}'}</p>
   </section>
   <ShowMore hasNoMore={true}></ShowMore>
 </article>
+
+<style>
+  .terminal-cmd {
+    margin-bottom: 0.5rem;
+  }
+
+  .links-container {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.8rem;
+    line-height: 1.6;
+  }
+
+  .comment {
+    color: #6b7280;
+    font-style: italic;
+    margin: 0 0 0.25rem;
+  }
+
+  .bracket {
+    color: #6b7280;
+    margin: 0;
+  }
+
+  .key {
+    color: #d1d5db;
+  }
+
+  .colon {
+    color: #9ca3af;
+  }
+
+  .category-block {
+    margin: 0;
+  }
+
+  .category-toggle {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    color: inherit;
+  }
+
+  .category-toggle:hover {
+    opacity: 0.8;
+  }
+
+  .collapsed-hint {
+    color: #4b5563;
+    font-style: italic;
+  }
+
+  .category-content {
+    margin-left: 0;
+  }
+
+  .link-item {
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+  }
+
+  .nested-block {
+    margin-left: 0;
+  }
+
+  .indent-1 {
+    display: inline-block;
+    width: 2ch;
+  }
+
+  .indent-2 {
+    display: inline-block;
+    width: 4ch;
+  }
+
+  .link-value {
+    color: #4b5563;
+    font-style: italic;
+  }
+</style>

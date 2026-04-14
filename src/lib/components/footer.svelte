@@ -1,5 +1,5 @@
-<footer class="w-full pt-10 flex flex-col items-center">
-  <p class="text-center"> Thank you for visiting! </p>
+<footer class="footer-section">
+  <p class="text-center">Thank you for visiting!</p>
   <p class="text-center">Made with ❤ and svelte by yours truly.</p>
   <div class="w-fit">
     <img
@@ -8,3 +8,22 @@
     />
   </div>
 </footer>
+
+<style>
+  .footer-section {
+    width: 100%;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.75rem;
+    line-height: 1.6;
+  }
+
+  .text-center {
+    text-align: center;
+    color: #9ca3af;
+    margin: 0.25rem 0;
+  }
+</style>

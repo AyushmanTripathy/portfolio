@@ -7,29 +7,146 @@
     const ageDate = new Date(ageDiff);
     return Math.abs(ageDate.getUTCFullYear() - 1970);
   });
+
+  const systemInfo = $derived({
+    os: "Arch Linux (btw)",
+    location: "Kalahandi, Odisha, India",
+    roles: ["Full Stack Developer", "CP Enthusiast", "Linux Enthusiast"],
+    loves: ["FOSS", "History", "Chicken", "Family"]
+  });
 </script>
 
 <article class="w-full">
-  <h2 class="font-bold">&gt; cat intro.txt</h2>
-  <section class="flex flex-col gap-3">
-    <p>Hello there!</p>
-    <p class="text-justify">
-      &emsp; I am a {age} year old full stack developer and GNU/Linux enthusiast.
-      I do competative programming for fun. I love computers, FOSS, GNU/Linux, good
-      humour, studying history, eating chicken and my family. I watch a lot of romcoms
-      &amp sitcoms and enjoy shows like The Office, Suits and Mr.Robot. I am also
-      tough to describe, atleast i find it hard.
-    </p>
+  <h2 class="font-bold terminal-cmd">&gt; cat /etc/motd</h2>
+  
+  <section class="intro-section">
+    <div class="greeting">
+      <span class="prompt">$</span> <span class="echo">echo "Hello, World!"</span>
+      <br />
+      <span class="output">Hello, World!</span>
+    </div>
 
-    <p class="text-justify">
-      &emsp; I use Arch btw! you can checkout my <a
-        target="_blank"
-        href="https://github.com/AyushmanTripathy/dots"
-      >
-        [dotfiles]
-      </a>. If you want to share a secret, here is my
-      <a target="_blank" href="/public.txt"> [public key] </a>.
-    </p>
+    <div class="bio">
+      <p>
+        <span class="comment"># About me</span>
+      </p>
+      <p>
+        name: <span class="string">"Ayushman Tripathy"</span>,
+      </p>
+      <p>
+        age: <span class="number">{age}</span>,
+      </p>
+      <p>
+        birthplace: <span class="string">"{systemInfo.location}"</span>,
+      </p>
+      <p>
+        roles: <span class="bracket">[</span>
+        {#each systemInfo.roles as role, i}
+          <span class="string">"{role}"</span>{i < systemInfo.roles.length - 1 ? ',' : ''}
+        {/each}
+        <span class="bracket">]</span>,
+      </p>
+      <p>
+        loves: <span class="bracket">[</span>
+        {#each systemInfo.loves as love, i}
+          <span class="string">"{love}"</span>{i < systemInfo.loves.length - 1 ? ',' : ''}
+        {/each}
+        <span class="bracket">]</span>
+      </p>
+    </div>
+
+    <div class="interests">
+      <p>
+        <span class="comment"># What I watch</span>
+      </p>
+      <p>
+        shows: <span class="bracket">[</span>
+        <span class="string">"The Office"</span>, <span class="string">"Suits"</span>, <span class="string">"Mr. Robot"</span>
+        <span class="bracket">]</span>,
+      </p>
+      <p>
+        genre: <span class="string">"Romcoms & Sitcoms"</span>
+      </p>
+    </div>
+
+    <div class="links-section">
+      <p>
+        <span class="comment"># Resources</span>
+      </p>
+      <p>
+        dotfiles: <a class="link" target="_blank" href="https://github.com/AyushmanTripathy/dots">[link]</a>,
+      </p>
+      <p>
+        pgp-key: <a class="link" target="_blank" href="/public.txt">[link]</a>
+      </p>
+    </div>
   </section>
+
   <ShowMore hasNoMore={true}></ShowMore>
 </article>
+
+<style>
+  .terminal-cmd {
+    margin-bottom: 1rem;
+  }
+
+  .intro-section {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.875rem;
+    line-height: 1.8;
+  }
+
+  .greeting {
+    margin-bottom: 1.5rem;
+  }
+
+  .prompt {
+    color: #6b7280;
+  }
+
+  .echo {
+    color: #9ca3af;
+  }
+
+  .output {
+    color: #d1d5db;
+    padding-left: 1.5rem;
+    display: block;
+  }
+
+  .comment {
+    color: #6b7280;
+    font-style: italic;
+  }
+
+  .string {
+    color: #a3a3a3;
+  }
+
+  .number {
+    color: #d1d5db;
+  }
+
+  .bracket {
+    color: #6b7280;
+  }
+
+  .link {
+    color: #888;
+    text-decoration: none;
+  }
+
+  .link:hover {
+    text-decoration: underline;
+    color: #bbb;
+  }
+
+  .bio, .interests, .links-section {
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin: 0;
+    padding-left: 0;
+  }
+</style>
