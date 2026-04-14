@@ -1,5 +1,31 @@
 [
   {
+    "month": "March 2026",
+    "notes": [
+      "Got into AI Agents & Claude Code",
+      {
+        "note": "Started on wooquery",
+        "link": "https://wooquery.com"
+      },
+      {
+        "note": "Worked on GVSEA & krishconnects",
+        "link": "https://gvsea.com"
+      },
+      "Tried Team fortress 2 & RBR"
+    ],
+    "movies": [
+      "Donnie Darko",
+      "Schindler's List",
+      "Sam Bahadur",
+      "1917",
+      "Manchester By The Sea",
+      "Evil Dead 2013",
+      "Dhurandhar 2",
+      "Memories of Murder",
+      "The Brothers Grimsby"
+    ]
+  },
+  {
     "month": "February 2026",
     "notes": [
       "This website redesign",
@@ -23,14 +49,8 @@
   },
   {
     "month": "January 2026",
-    "notes": [
-      "Went for Hack NITR"
-    ],
-    "movies": [
-      "The Backlist",
-      "Dhurandhar",
-      "Hitman Agent 47"
-    ]
+    "notes": ["Went for Hack NITR"],
+    "movies": ["The Backlist", "Dhurandhar", "Hitman Agent 47"]
   },
   {
     "month": "December 2025",
