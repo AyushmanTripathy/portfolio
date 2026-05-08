@@ -11,7 +11,7 @@ Full Stack Developer and Linux enthusiast from Kalahandi, Odisha, India. This si
 
 ## Navigation
 - [Home](https://ayushmantripathy.netlify.app/) - Personal bio (/etc/motd) and journey log (git log).
-- [Blogs](https://ayushmantripathy.netlify.app/blogs) - Technical articles and personal insights in 'man page' format.
+- [Blogs](https://ayushmantripathy.netlify.app/blogs) - Technical articles and personal insights in 'man page' format. Individual articles are available at `/blogs/[id]`.
 - [Links](https://ayushmantripathy.netlify.app/links) - Curated list of articles, books, and resources.
 - [Movies](https://ayushmantripathy.netlify.app/movies) - A log of watched movies/TV shows in a psql-style table.
 

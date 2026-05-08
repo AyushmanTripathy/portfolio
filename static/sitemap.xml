@@ -11,6 +11,21 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://ayushmantripathy.netlify.app/blogs/making_jukebox_videos</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ayushmantripathy.netlify.app/blogs/my_cp_setup</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ayushmantripathy.netlify.app/blogs/listening_to_songs</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://ayushmantripathy.netlify.app/movies</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

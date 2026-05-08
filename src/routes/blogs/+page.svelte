@@ -99,11 +99,16 @@
     {/if}
     
     <div class="collapsed-view" class:expanded={isExpanded[blogIdx]}>
-      <button class="man-toggle" onclick={() => expandBlog(blogIdx)}>
-        <span class="toggle-icon">{isExpanded[blogIdx] ? '▼' : '▶'}</span>
-        <span class="man-id">{blog.id}</span>
-        <span class="man-heading">- {blog.heading}</span>
-      </button>
+      <div class="flex items-center gap-2">
+        <button class="man-toggle flex-1" onclick={() => expandBlog(blogIdx)}>
+          <span class="toggle-icon">{isExpanded[blogIdx] ? '▼' : '▶'}</span>
+          <span class="man-id">{blog.id}</span>
+          <span class="man-heading">- {blog.heading}</span>
+        </button>
+        <a href="/blogs/{blog.id}" class="text-xs text-dim hover:text-primary transition-colors whitespace-nowrap">
+          [open]
+        </a>
+      </div>
     </div>
   </article>
 {/each}
