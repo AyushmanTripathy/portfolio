@@ -14,8 +14,9 @@
 </script>
 
 <svelte:head>
-  <title>Links | Ayushman Tripathy</title>
-  <meta name="description" content="A curated collection of stuff i liked." />
+  <title>Links & Resources | Ayushman Tripathy</title>
+  <meta name="description" content="A curated collection of useful articles, books, and YouTube channels about programming, Linux, and more." />
+  <link rel="canonical" href="https://ayushmantripathy.netlify.app/links" />
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",

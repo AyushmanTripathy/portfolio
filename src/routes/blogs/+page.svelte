@@ -14,6 +14,7 @@
 <svelte:head>
   <title>Blogs | Ayushman Tripathy</title>
   <meta name="description" content="Read technical articles and personal insights by Ayushman Tripathy, presented in a unique terminal-inspired 'man page' format." />
+  <link rel="canonical" href="https://ayushmantripathy.netlify.app/blogs" />
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",

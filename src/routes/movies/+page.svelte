@@ -4,7 +4,8 @@
 
 <svelte:head>
   <title>Movies & TV Shows | Ayushman Tripathy</title>
-  <meta name="description" content="A log of movies and TV shows watched by me." />
+  <meta name="description" content="A log of movies and TV shows watched by Ayushman Tripathy." />
+  <link rel="canonical" href="https://ayushmantripathy.netlify.app/movies" />
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",

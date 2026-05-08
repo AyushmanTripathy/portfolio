@@ -61,7 +61,8 @@
       </p>
       <p>
         I like: <span class="bracket">[</span>
-        <span class="string">"The Office"</span>, <span class="string">"Suits"</span>, <span class="string">"Mr. Robot"</span>
+        <span class="string">"The Office"</span>, <span class="string">"Suits"</span>, <span class="string">"Mr. Robot"</span>,
+        <span class="string">"Wayne"</span>
         <span class="bracket">]</span>,
       </p>
       <p>

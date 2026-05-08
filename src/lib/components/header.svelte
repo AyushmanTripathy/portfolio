@@ -11,11 +11,11 @@
     <pre class="ascii-art">{cowsay.say({ text: randomQuote })}</pre>
   </div>
 
-  <div class="name-block">
+  <div class="command-block">
     <span class="prompt">$</span> <span class="command">whoami</span>
-    <br />
-    <h1 class="output">Ayushman Tripathy</h1>
   </div>
+
+  <h1 class="output">Ayushman Tripathy</h1>
 
   <div class="actions-block">
     <button onclick={toggleMode} class="theme-toggle">
@@ -62,10 +62,8 @@
     margin: 0;
   }
 
-  .name-block {
+  .command-block {
     font-size: 1rem;
-    line-height: 1.8;
-    margin-bottom: 1rem;
     text-align: center;
   }
 
@@ -79,10 +77,12 @@
 
   .output {
     color: var(--text-primary);
-    padding-left: 1.5rem;
     display: block;
     font-weight: 600;
     letter-spacing: 0.05em;
+    margin: 1rem 0;
+    font-size: 1.0rem;
+    line-height: 1;
   }
 
   .actions-block {
