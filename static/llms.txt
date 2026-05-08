@@ -1,0 +1,27 @@
+# Ayushman Tripathy - Portfolio
+
+Full Stack Developer and Linux enthusiast from Kalahandi, Odisha, India. This site is a terminal-inspired portfolio showcasing projects, blogs, and personal logs.
+
+## Core Information
+- **Name:** Ayushman Tripathy
+- **Role:** Full Stack Developer, CP Enthusiast, Linux Enthusiast
+- **Location:** Kalahandi, Odisha, India
+- **Birth Date:** 2004-08-08
+- **Primary Tech Stack:** React, Svelte, Node.js, Linux, Python, Go
+
+## Navigation
+- [Home](https://ayushmantripathy.netlify.app/) - Personal bio (/etc/motd) and journey log (git log).
+- [Blogs](https://ayushmantripathy.netlify.app/blogs) - Technical articles and personal insights in 'man page' format.
+- [Links](https://ayushmantripathy.netlify.app/links) - Curated list of articles, books, and resources.
+- [Movies](https://ayushmantripathy.netlify.app/movies) - A log of watched movies/TV shows in a psql-style table.
+
+## Social Links
+- **GitHub:** https://github.com/AyushmanTripathy
+- **Codechef:** https://www.codechef.com/users/ayushmantripat
+- **Hackerrank:** https://www.hackerrank.com/profile/ayushmantripath3
+- **Telegram:** https://t.me/AyushmanTripathy
+- **YouTube:** https://www.youtube.com/@ayushmantripathy1917
+- **Email:** mailto:ayushmantripathy2004@gmail.com
+
+## About the Site
+The site follows a strict dark-mode, gray-palette CLI aesthetic. It uses SvelteKit and is hosted on Netlify.
