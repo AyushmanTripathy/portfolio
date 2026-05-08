@@ -13,6 +13,11 @@
   }
 </script>
 
+<svelte:head>
+  <title>Links & Stuff | Ayushman Tripathy</title>
+  <meta name="description" content="A curated collection stuff i like." />
+</svelte:head>
+
 <article class="w-full">
   <h2 class="font-bold terminal-cmd">&gt; cat ~/.links.json</h2>
   <section class="links-container">
@@ -46,7 +51,7 @@
               {#if typeof val == "string"}
                 <p class="link-item">
                   <span class="indent-1"></span>
-                  <span class="key">"{key}"</span><span class="colon">:</span> <span class="link-value">[hidden]</span>{isLast ? '' : ','}
+                  <a href={val} target="_blank" class="key hover:underline">"{key}"</a><span class="colon">:</span> <span class="link-value">[hidden]</span>{isLast ? '' : ','}
                 </p>
               {:else if typeof val == "object" && val !== null}
                 {@const subKeys = Object.keys(val)}
@@ -59,7 +64,12 @@
                     {@const isSubLast = subIdx === subKeys.length - 1}
                     <p class="link-item">
                       <span class="indent-2"></span>
-                      <span class="key">"{subKey}"</span><span class="colon">:</span> <span class="link-value">[hidden]</span>{isSubLast ? '' : ','}
+                      {#if typeof subVal === 'string'}
+                        <a href={subVal} target="_blank" class="key hover:underline">"{subKey}"</a>
+                      {:else}
+                        <span class="key">"{subKey}"</span>
+                      {/if}
+                      <span class="colon">:</span> <span class="link-value">[hidden]</span>{isSubLast ? '' : ','}
                     </p>
                   {/each}
                   <p><span class="indent-1"></span><span class="bracket">{'}'}{isLast ? ',' : ''}</span></p>

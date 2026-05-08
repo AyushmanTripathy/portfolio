@@ -14,7 +14,7 @@
   <div class="name-block">
     <span class="prompt">$</span> <span class="command">whoami</span>
     <br />
-    <span class="output">Ayushman Tripathy</span>
+    <h1 class="output">Ayushman Tripathy</h1>
   </div>
 
   <div class="actions-block">

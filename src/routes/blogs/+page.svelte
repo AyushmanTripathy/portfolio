@@ -11,6 +11,11 @@
   }
 </script>
 
+<svelte:head>
+  <title>Blogs | Ayushman Tripathy</title>
+  <meta name="description" content="Read technical articles and personal insights by Ayushman Tripathy, presented in a unique terminal-inspired 'man page' format." />
+</svelte:head>
+
 <article class="w-full">
   <h2 class="font-bold terminal-cmd">&gt; man -k . | grep blog</h2>
   
@@ -34,7 +39,7 @@
         
         <div class="man-section">
           <div class="section-name">NAME</div>
-          <div class="section-content">{blog.heading}</div>
+          <h3 class="section-content text-base font-bold">{blog.heading}</h3>
         </div>
         
         <div class="man-section">

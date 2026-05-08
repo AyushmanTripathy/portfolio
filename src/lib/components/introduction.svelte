@@ -135,6 +135,7 @@
   .link {
     color: var(--text-muted);
     text-decoration: none;
+    font-style: italic;
   }
 
   .link:hover {
