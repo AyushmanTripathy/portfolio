@@ -14,6 +14,36 @@
 <svelte:head>
   <title>Blogs | Ayushman Tripathy</title>
   <meta name="description" content="Read technical articles and personal insights by Ayushman Tripathy, presented in a unique terminal-inspired 'man page' format." />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://ayushmantripathy.netlify.app/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Blogs",
+              "item": "https://ayushmantripathy.netlify.app/blogs"
+            }
+          ]
+        },
+        {
+          "@type": "CollectionPage",
+          "name": "Blogs | Ayushman Tripathy",
+          "description": "Technical articles and personal insights by Ayushman Tripathy.",
+          "url": "https://ayushmantripathy.netlify.app/blogs"
+        }
+      ]
+    }
+  </script>
 </svelte:head>
 
 <article class="w-full">

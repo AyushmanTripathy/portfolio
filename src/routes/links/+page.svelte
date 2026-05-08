@@ -14,8 +14,38 @@
 </script>
 
 <svelte:head>
-  <title>Links & Stuff | Ayushman Tripathy</title>
-  <meta name="description" content="A curated collection stuff i like." />
+  <title>Links | Ayushman Tripathy</title>
+  <meta name="description" content="A curated collection of stuff i liked." />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://ayushmantripathy.netlify.app/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Links",
+              "item": "https://ayushmantripathy.netlify.app/links"
+            }
+          ]
+        },
+        {
+          "@type": "CollectionPage",
+          "name": "Links & Resources | Ayushman Tripathy",
+          "description": "A curated collection of useful articles, books, and resources.",
+          "url": "https://ayushmantripathy.netlify.app/links"
+        }
+      ]
+    }
+  </script>
 </svelte:head>
 
 <article class="w-full">
