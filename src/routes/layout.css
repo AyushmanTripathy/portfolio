@@ -20,14 +20,17 @@ p {
   font-family: "JetBrains Mono", monospace;
   font-optical-sizing: auto;
   font-style: normal;
+  line-height: 1.6;
+  letter-spacing: -0.01em;
 }
 
 h1 {
   font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 p {
-  font-weight: 300;
+  font-weight: 400;
 }
 
 strong {

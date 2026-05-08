@@ -31,25 +31,25 @@
         <span class="comment"># About me</span>
       </p>
       <p>
-        name: <span class="string">"Ayushman Tripathy"</span>,
+        I am: <span class="string">"Ayushman Tripathy"</span>,
       </p>
       <p>
-        age: <span class="number">{age}</span>,
+        I age: <span class="number">{age}</span>,
       </p>
       <p>
-        birthplace: <span class="string">"{systemInfo.location}"</span>,
+        I am from: <span class="string">"{systemInfo.location}"</span>,
       </p>
       <p>
-        roles: <span class="bracket">[</span>
+        I am a: <span class="bracket">[</span>
         {#each systemInfo.roles as role, i}
-          <span class="string">"{role}"</span>{i < systemInfo.roles.length - 1 ? ',' : ''}
+          <span class="string">"{role}"</span>{i < systemInfo.roles.length - 1 ? ', ' : ' '}
         {/each}
         <span class="bracket">]</span>,
       </p>
       <p>
-        loves: <span class="bracket">[</span>
+        I love: <span class="bracket">[</span>
         {#each systemInfo.loves as love, i}
-          <span class="string">"{love}"</span>{i < systemInfo.loves.length - 1 ? ',' : ''}
+          <span class="string">"{love}"</span>{i < systemInfo.loves.length - 1 ? ', ' : ' '}
         {/each}
         <span class="bracket">]</span>
       </p>
@@ -60,12 +60,12 @@
         <span class="comment"># What I watch</span>
       </p>
       <p>
-        shows: <span class="bracket">[</span>
+        I like: <span class="bracket">[</span>
         <span class="string">"The Office"</span>, <span class="string">"Suits"</span>, <span class="string">"Mr. Robot"</span>
         <span class="bracket">]</span>,
       </p>
       <p>
-        genre: <span class="string">"Romcoms & Sitcoms"</span>
+        I watch: <span class="string">"Romcoms & Sitcoms"</span>
       </p>
     </div>
 
@@ -94,6 +94,7 @@
     font-family: "JetBrains Mono", monospace;
     font-size: 0.875rem;
     line-height: 1.8;
+    letter-spacing: -0.01em;
   }
 
   .greeting {

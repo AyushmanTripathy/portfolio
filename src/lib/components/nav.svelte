@@ -16,8 +16,8 @@
   <section class="nav-section">
     <div class="nav-header">
       <span class="perm">drwxr-xr-x</span>
-      <span class="owner">user</span>
-      <span class="group">staff</span>
+      <span class="owner">ayush</span>
+      <span class="group">ayush</span>
       <span class="size">1024</span>
       <span class="date">Apr 14 12:00</span>
       <span class="name">name</span>
@@ -27,8 +27,8 @@
       {@const isSelected = page.url.pathname == item.path}
       <div class="nav-item" class:selected={isSelected}>
         <span class="perm">drwxr-xr-x</span>
-        <span class="owner">user</span>
-        <span class="group">staff</span>
+        <span class="owner">ayush</span>
+        <span class="group">ayush</span>
         <span class="size">-</span>
         <span class="date">--</span>
         {#if isSelected}

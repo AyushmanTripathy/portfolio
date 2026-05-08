@@ -20,7 +20,6 @@
   
   <section class="log-section">
     <div class="log-header">
-      <span class="commit-hash">commit</span>
       <span class="commit-date">date</span>
       <span class="commit-msg">message</span>
     </div>
@@ -32,9 +31,7 @@
         </div>
         
         {#each month.notes as note, noteIndex}
-          {@const commitHash = Math.random().toString(36).substring(2, 9)}
           <div class="log-entry">
-            <span class="commit-hash">{commitHash}</span>
             <span class="commit-date">--</span>
             <span class="commit-msg">
               {#if typeof note == "string"}
@@ -61,13 +58,13 @@
 
   .log-section {
     font-family: "JetBrains Mono", monospace;
-    font-size: 0.8rem;
-    line-height: 1.6;
+    font-size: 0.875rem;
+    line-height: 1.7;
   }
 
   .log-header {
     display: grid;
-    grid-template-columns: 80px 60px 1fr;
+    grid-template-columns: 60px 1fr;
     gap: 0.5rem;
     padding: 0.25rem 0;
     border-bottom: 1px solid #333;
@@ -94,14 +91,9 @@
 
   .log-entry {
     display: grid;
-    grid-template-columns: 80px 60px 1fr;
+    grid-template-columns: 60px 1fr;
     gap: 0.5rem;
     padding: 0.125rem 0;
-  }
-
-  .commit-hash {
-    color: #6b7280;
-    font-family: "JetBrains Mono", monospace;
   }
 
   .commit-date {
