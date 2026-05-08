@@ -88,22 +88,22 @@
   }
 
   .comment {
-    color: #6b7280;
+    color: var(--text-muted);
     font-style: italic;
     margin: 0 0 0.25rem;
   }
 
   .bracket {
-    color: #6b7280;
+    color: var(--text-muted);
     margin: 0;
   }
 
   .key {
-    color: #d1d5db;
+    color: var(--text-primary);
   }
 
   .colon {
-    color: #9ca3af;
+    color: var(--text-dim);
   }
 
   .category-block {
@@ -129,7 +129,7 @@
   }
 
   .collapsed-hint {
-    color: #4b5563;
+    color: var(--text-dim);
     font-style: italic;
   }
 
@@ -160,7 +160,7 @@
   }
 
   .link-value {
-    color: #4b5563;
+    color: var(--text-dim);
     font-style: italic;
   }
 </style>

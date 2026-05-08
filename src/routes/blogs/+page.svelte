@@ -84,7 +84,7 @@
   }
 
   .man-header {
-    color: #6b7280;
+    color: var(--text-primary);
     margin: 0;
   }
 
@@ -93,7 +93,7 @@
   }
 
   .pages {
-    color: #4b5563;
+    color: var(--text-muted);
     margin-left: 0.5rem;
   }
 
@@ -119,26 +119,26 @@
     cursor: pointer;
     font-family: inherit;
     font-size: inherit;
-    color: #9ca3af;
+    color: var(--text-primary);
   }
 
   .man-toggle:hover {
-    background: rgba(255, 255, 255, 0.03);
+    background: rgba(128, 128, 128, 0.05);
   }
 
   .toggle-icon {
-    color: #6b7280;
+    color: var(--text-muted);
     font-size: 0.65rem;
     width: 1rem;
   }
 
   .man-id {
-    color: #d1d5db;
+    color: var(--text-primary);
     font-weight: 600;
   }
 
   .man-heading {
-    color: #6b7280;
+    color: var(--text-primary);
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -149,26 +149,26 @@
     font-size: 0.8rem;
     line-height: 1.5;
     margin-bottom: 0.5rem;
-    border: 1px solid #444;
-    background: #0d0d0d;
+    border: 1px solid var(--border-color);
+    background: var(--bg-primary);
   }
 
   .man-header-line {
     display: flex;
     justify-content: space-between;
     padding: 0.5rem;
-    border-bottom: 1px solid #444;
-    background: #1a1a1a;
+    border-bottom: 1px solid var(--border-color);
+    background: rgba(128, 128, 128, 0.05);
   }
 
   .man-title {
-    color: #d1d5db;
+    color: var(--text-primary);
     font-weight: 600;
   }
 
   .man-section {
     padding: 0.5rem 0.75rem;
-    border-bottom: 1px solid #2a2a2a;
+    border-bottom: 1px solid var(--border-color);
   }
 
   .man-section:last-child {
@@ -176,14 +176,14 @@
   }
 
   .section-name {
-    color: #d1d5db;
+    color: var(--text-primary);
     font-weight: 600;
     font-size: 0.75rem;
     margin-bottom: 0.25rem;
   }
 
   .section-content {
-    color: #a3a3a3;
+    color: var(--text-primary);
     padding-left: 0;
   }
 
@@ -195,53 +195,49 @@
   }
 
   .cmd {
-    color: #d1d5db;
+    color: var(--text-primary);
   }
 
   .flag {
-    color: #888;
+    color: var(--text-muted);
   }
 
   .arg {
-    color: #6b7280;
+    color: var(--text-muted);
   }
 
   .description :global(p) {
     margin: 0.25rem 0;
+    color: var(--text-primary);
   }
 
   .description :global(h2) {
-    color: #d1d5db;
+    color: var(--text-primary);
     font-size: 0.85rem;
     margin: 0.5rem 0 0.25rem;
     font-weight: 600;
   }
 
   .description :global(pre) {
-    background: #141414;
+    background: rgba(128, 128, 128, 0.05);
     padding: 0.5rem;
     overflow-x: auto;
     font-size: 0.7rem;
-    border: 1px solid #333;
+    border: 1px solid var(--border-color);
     margin: 0.25rem 0;
   }
 
   .description :global(code) {
-    color: #a3a3a3;
+    color: var(--text-primary);
   }
 
   .description :global(a) {
-    color: #888;
-    text-decoration: none;
-  }
-
-  .description :global(a:hover) {
-    text-decoration: underline;
-    color: #bbb;
+    color: var(--color-tri);
+    font-weight: 700;
   }
 
   .see-also {
-    color: #888;
+    color: var(--text-primary);
     font-style: italic;
   }
 </style>

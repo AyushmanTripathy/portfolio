@@ -12,7 +12,7 @@
     os: "Arch Linux (btw)",
     location: "Kalahandi, Odisha, India",
     roles: ["Full Stack Developer", "CP Enthusiast", "Linux Enthusiast"],
-    loves: ["FOSS", "History", "Chicken", "Family"]
+    loves: ["FOSS", "History", "Chicken", "My Family"]
   });
 </script>
 
@@ -102,44 +102,44 @@
   }
 
   .prompt {
-    color: #6b7280;
+    color: var(--text-muted);
   }
 
   .echo {
-    color: #9ca3af;
+    color: var(--text-dim);
   }
 
   .output {
-    color: #d1d5db;
+    color: var(--text-primary);
     padding-left: 1.5rem;
     display: block;
   }
 
   .comment {
-    color: #6b7280;
+    color: var(--text-muted);
     font-style: italic;
   }
 
   .string {
-    color: #a3a3a3;
+    color: var(--text-dim);
   }
 
   .number {
-    color: #d1d5db;
+    color: var(--text-primary);
   }
 
   .bracket {
-    color: #6b7280;
+    color: var(--text-muted);
   }
 
   .link {
-    color: #888;
+    color: var(--text-muted);
     text-decoration: none;
   }
 
   .link:hover {
     text-decoration: underline;
-    color: #bbb;
+    color: var(--text-primary);
   }
 
   .bio, .interests, .links-section {

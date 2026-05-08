@@ -67,9 +67,9 @@
     grid-template-columns: 60px 1fr;
     gap: 0.5rem;
     padding: 0.25rem 0;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid var(--border-color);
     margin-bottom: 0.5rem;
-    color: #6b7280;
+    color: var(--text-muted);
     font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -85,7 +85,7 @@
   }
 
   .month-label {
-    color: #9ca3af;
+    color: var(--text-dim);
     font-weight: 600;
   }
 
@@ -97,28 +97,28 @@
   }
 
   .commit-date {
-    color: #4b5563;
+    color: var(--text-dim);
   }
 
   .commit-msg {
-    color: #d1d5db;
+    color: var(--text-primary);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
 
   .log-link {
-    color: #888;
+    color: var(--text-muted);
     text-decoration: none;
   }
 
   .log-link:hover {
     text-decoration: underline;
-    color: #bbb;
+    color: var(--text-primary);
   }
 
   .end-comment {
-    color: #4b5563;
+    color: var(--text-dim);
     font-style: italic;
     margin-top: 0.5rem;
   }

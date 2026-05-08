@@ -1,6 +1,7 @@
 <script lang="ts">
   import * as cowsay from "cowsay";
   import quotes from "$lib/content/quotes.json";
+  import { toggleMode, mode } from "mode-watcher";
 
   const randomQuote = quotes[Math.floor(Math.random() * quotes.length)]
 </script>
@@ -14,6 +15,13 @@
     <span class="prompt">$</span> <span class="command">whoami</span>
     <br />
     <span class="output">Ayushman Tripathy</span>
+  </div>
+
+  <div class="actions-block">
+    <button onclick={toggleMode} class="theme-toggle">
+      <span class="prompt">$</span> theme --toggle
+      <span class="mode-text">[{#if mode.current === 'dark'}dark{:else}light{/if}]</span>
+    </button>
   </div>
 
   <div class="links-block">
@@ -50,7 +58,7 @@
     font-family: "JetBrains Mono", monospace;
     font-size: 0.65rem;
     line-height: 1.1;
-    color: #6b7280;
+    color: var(--text-muted);
     margin: 0;
   }
 
@@ -62,19 +70,44 @@
   }
 
   .prompt {
-    color: #6b7280;
+    color: var(--text-muted);
   }
 
   .command {
-    color: #9ca3af;
+    color: var(--text-dim);
   }
 
   .output {
-    color: #d1d5db;
+    color: var(--text-primary);
     padding-left: 1.5rem;
     display: block;
     font-weight: 600;
     letter-spacing: 0.05em;
+  }
+
+  .actions-block {
+    margin-bottom: 1rem;
+  }
+
+  .theme-toggle {
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: inherit;
+    font-size: 0.875rem;
+    color: var(--text-dim);
+    cursor: pointer;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .theme-toggle:hover {
+    color: var(--text-primary);
+  }
+
+  .mode-text {
+    color: var(--text-muted);
   }
 
   .links-block {
@@ -90,17 +123,17 @@
   }
 
   .link {
-    color: #888;
+    color: var(--text-muted);
     text-decoration: none;
     padding: 0 0.25rem;
   }
 
   .link:hover {
-    color: #d1d5db;
+    color: var(--text-primary);
     text-decoration: underline;
   }
 
   .separator {
-    color: #4b5563;
+    color: var(--text-dim);
   }
 </style>

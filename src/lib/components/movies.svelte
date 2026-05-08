@@ -83,16 +83,16 @@
   .movies-header {
     margin-bottom: 0.75rem;
     padding-bottom: 0.5rem;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid var(--border-color);
   }
 
   .db-tag {
-    color: #6b7280;
+    color: var(--text-muted);
     font-size: 0.75rem;
   }
 
   .count {
-    color: #4b5563;
+    color: var(--text-primary);
     font-size: 0.75rem;
   }
 
@@ -115,12 +115,12 @@
   }
 
   .year-marker {
-    color: #6b7280;
+    color: var(--text-muted);
     font-size: 0.65rem;
   }
 
   .year-num {
-    color: #9ca3af;
+    color: var(--text-primary);
     font-weight: 600;
     font-size: 0.9rem;
   }
@@ -139,7 +139,7 @@
   }
 
   .month-name {
-    color: #6b7280;
+    color: var(--text-primary);
     font-size: 0.75rem;
   }
 
@@ -154,11 +154,11 @@
   }
 
   .movie-title {
-    color: #a3a3a3;
+    color: var(--text-primary);
   }
 
   .end-comment {
-    color: #4b5563;
+    color: var(--text-muted);
     font-style: italic;
     margin-top: 0.5rem;
   }

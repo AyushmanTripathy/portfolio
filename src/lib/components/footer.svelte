@@ -23,7 +23,7 @@
 
   .text-center {
     text-align: center;
-    color: #9ca3af;
+    color: var(--text-dim);
     margin: 0.25rem 0;
   }
 </style>

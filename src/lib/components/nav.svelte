@@ -62,8 +62,8 @@
   }
 
   .nav-header {
-    color: #6b7280;
-    border-bottom: 1px solid #333;
+    color: var(--text-muted);
+    border-bottom: 1px solid var(--border-color);
     margin-bottom: 0.25rem;
     font-size: 0.7rem;
   }
@@ -73,41 +73,41 @@
   }
 
   .nav-item:hover {
-    background: rgba(255, 255, 255, 0.03);
+    background: rgba(128, 128, 128, 0.05);
   }
 
   .nav-item.selected {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(128, 128, 128, 0.08);
   }
 
   .perm {
-    color: #6b7280;
+    color: var(--text-muted);
   }
 
   .owner, .group {
-    color: #4b5563;
+    color: var(--text-dim);
   }
 
   .size {
-    color: #6b7280;
+    color: var(--text-muted);
   }
 
   .date {
-    color: #4b5563;
+    color: var(--text-dim);
   }
 
   .name {
-    color: #888;
+    color: var(--text-muted);
     text-decoration: none;
   }
 
   .name:hover {
-    color: #d1d5db;
+    color: var(--text-primary);
     text-decoration: underline;
   }
 
   .selected-name {
-    color: #d1d5db;
+    color: var(--text-primary);
     font-weight: 600;
   }
 
