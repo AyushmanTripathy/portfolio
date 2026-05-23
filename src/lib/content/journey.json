@@ -1,5 +1,38 @@
 [
   {
+    "month": "May 2026",
+    "notes": [
+      "Made link checker",
+      "Experimented with schema-query project",
+      "Worked with Figma & svelte MCP",
+      "This website redesign (v3)"
+    ],
+    "movies": [
+      "Hannibal",
+      "The Girl with the Dragon Tattoo",
+      "Set It Up"
+    ]
+  },
+  {
+    "month": "April 2026",
+    "notes": [
+      {
+        "note": "Vibe coded portal",
+        "link": "https://portal-p2p.netlify.app"
+      },
+      "Explored AI Skills"
+    ],
+    "movies": [
+      "Dune I & II",
+      "Rewatched Office",
+      "Love Death + Robots",
+      "Materialists",
+      "Paan Singh Tomar",
+      "Mard Ko Dard Nahi Hota",
+      "Geetha Govindam"
+    ]
+  },
+  {
     "month": "March 2026",
     "notes": [
       "Got into AI Agents & Claude Code",
@@ -28,7 +61,7 @@
   {
     "month": "February 2026",
     "notes": [
-      "This website redesign",
+      "This website redesign (v2)",
       "Did mentorship for hacknovation & hack",
       "GIETU protest",
       "Started reading Linux Kernel Development"
