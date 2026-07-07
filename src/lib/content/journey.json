@@ -1,5 +1,32 @@
 [
   {
+    "month": "July 2026",
+    "notes": [],
+    "movies": [
+      "Finding Emily",
+      "Atonement",
+      "Garden State",
+      "Leap Year"
+    ]
+  },
+  {
+    "month": "June 2026",
+    "notes": [
+      "Completed COD Morden Warfare & 2",
+      {
+        "note": "Build my first MCP server, db-mcp",
+        "link": "https://github.com/ayushmantripathy/db-mcp"
+      }
+    ],
+    "movies": [
+      "Juno",
+      "The Machinist",
+      "Ex Machina",
+      "Project Hail Mary",
+      "Game of Thrones S1, S2, S3"
+    ]
+  },
+  {
     "month": "May 2026",
     "notes": [
       "Made link checker",
