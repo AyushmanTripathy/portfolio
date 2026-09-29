@@ -1,11 +1,42 @@
 [
   {
-    "month": "July 2026",
-    "notes": [
-      "Read Chainsaw Man manga"
-    ],
+    "month": "September 2026",
+    "notes": ["Got into Kubernetes & Azure"],
     "movies": [
+      "Ted S1 & S2",
+      "He's Just Not That Into You",
+      "The Devil Wears Prada",
+      "Up",
+      "Finding Emily",
+      "The King",
+      "Gladiator",
+      "The Last Sunrise"
+    ]
+  },
+  {
+    "month": "August 2026",
+    "notes": ["Switched to 3N performance", "Played Skyrim & MB Warband"],
+    "movies": [
+      "Paper towns",
+      "The Grand Budapest Hotel",
+      "Theres Something About Mary",
+      "My Oxford Year",
+      "I Love You, Man",
+      "Sex Tape",
+      "What Happens In Vegas",
+      "Sunrise In Heaven"
+    ]
+  },
+  {
+    "month": "July 2026",
+    "notes": ["Read Chainsaw Man manga"],
+    "movies": [
+      "Saving Private Ryan",
+      "Parasite",
+      "Your Name",
       "American Beauty",
+      "The Big Lebowski",
+      "The Dark Knight",
       "Finding Emily",
       "Atonement",
       "Reacher S1",
@@ -38,11 +69,7 @@
       "Worked with Figma & svelte MCP",
       "This website redesign (v3)"
     ],
-    "movies": [
-      "Hannibal",
-      "The Girl with the Dragon Tattoo",
-      "Set It Up"
-    ]
+    "movies": ["Hannibal", "The Girl with the Dragon Tattoo", "Set It Up"]
   },
   {
     "month": "April 2026",
