@@ -11,8 +11,8 @@
   const systemInfo = $derived({
     os: "Arch Linux (btw)",
     location: "Kalahandi, Odisha, India",
-    roles: ["Full Stack Developer", "CP Enthusiast", "Linux Enthusiast"],
-    loves: ["FOSS", "History", "Chicken", "My Family"]
+    roles: ["DevOps Engineer", "Full Stack Developer", "Linux & CP Enthusiast"],
+    loves: ["FOSS", "History", "Chicken"]
   });
 </script>
 
