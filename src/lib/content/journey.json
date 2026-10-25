@@ -1,5 +1,22 @@
 [
   {
+    "month": "October 2026",
+    "notes": [
+      "Got into Go Programming",
+      {
+        "note": "Built URL Shortener",
+        "link": "https://github.com/ayushmantripathy/url-shortener"
+      },
+      "Started my first SIP (NIFTY Next 50)"
+    ],
+    "movies": [
+      "A Silent Voice",
+      "I want to eat your pancreas",
+      "Peaky Blinders: The Immortal Man",
+      "No country for old men"
+    ]
+  },
+  {
     "month": "September 2026",
     "notes": ["Got into Kubernetes & Azure"],
     "movies": [
