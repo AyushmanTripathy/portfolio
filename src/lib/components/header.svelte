@@ -2,13 +2,64 @@
   import * as cowsay from "cowsay";
   import quotes from "$lib/content/quotes.json";
   import { toggleMode, mode } from "mode-watcher";
+  import { onMount } from "svelte";
+  import { afterNavigate } from "$app/navigation";
 
-  const randomQuote = quotes[Math.floor(Math.random() * quotes.length)]
+  const STORAGE_KEY = "quote_offset";
+
+  let currentQuote = $state<string | null>(null);
+  let mounted = $state(false);
+
+  function getNextIndex(): number {
+    if (!quotes || quotes.length === 0) return 0;
+    try {
+      const stored = localStorage.getItem(STORAGE_KEY);
+      if (stored !== null) {
+        const parsed = parseInt(stored, 10);
+        if (!isNaN(parsed) && Number.isInteger(parsed)) {
+          return ((parsed % quotes.length) + quotes.length) % quotes.length;
+        }
+      }
+      return Math.floor(Math.random() * quotes.length);
+    } catch {
+      return Math.floor(Math.random() * quotes.length);
+    }
+  }
+
+  function advanceQuote() {
+    if (!quotes || quotes.length === 0) return;
+    const index = getNextIndex();
+    currentQuote = quotes[index];
+    const nextOffset = (index + 1) % quotes.length;
+    try {
+      localStorage.setItem(STORAGE_KEY, String(nextOffset));
+    } catch {
+      // Safe fallback if localStorage is unavailable
+    }
+  }
+
+  onMount(() => {
+    advanceQuote();
+    mounted = true;
+  });
+
+  afterNavigate((navigation) => {
+    if (
+      mounted &&
+      navigation.from &&
+      navigation.to &&
+      navigation.from.url.pathname !== navigation.to.url.pathname
+    ) {
+      advanceQuote();
+    }
+  });
 </script>
 
 <article class="header-section">
   <div class="cowsay-block">
-    <pre class="ascii-art">{cowsay.say({ text: randomQuote })}</pre>
+    {#if mounted && currentQuote}
+      <pre class="ascii-art">{cowsay.say({ text: currentQuote })}</pre>
+    {/if}
   </div>
 
   <div class="command-block">
@@ -20,7 +71,7 @@
   <div class="actions-block">
     <button onclick={toggleMode} class="theme-toggle">
       <span class="prompt">$</span> theme --toggle
-      <span class="mode-text">[{#if mode.current === 'dark'}dark{:else}light{/if}]</span>
+      <span class="mode-text">[{#if mode.current === 'light'}light{:else}dark{/if}]</span>
     </button>
   </div>
 
@@ -52,6 +103,7 @@
 
   .cowsay-block {
     margin-bottom: 1rem;
+    min-height: 5.8rem;
   }
 
   .ascii-art {
